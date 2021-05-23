@@ -62,7 +62,28 @@ Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
   mutate(`2019` = as.numeric(`2019`)) 
 ```
 
+```{r}
+analysis<- Genderstatistics %>%
+  filter(`Series Name` %in% c("Inflation, consumer prices (annual %)", "Population ages 15-64, female", "Population ages 15-64, male", "Life expectancy at birth, female (years)","Life expectancy at birth, male (years)")) %>%
+  select(-c(`Series Code`,`Country Code`)) %>%
+   pivot_longer(cols = -c(`Country Name`,`Series Name`),
+               names_to = "Year",
+               values_to = "count") %>%
+  pivot_wider(names_from = "Series Name",
+              values_from = "count") 
+```
 
+```{r}
+analysis <- analysis %>%
+mutate(Inflation = as.numeric(`Inflation, consumer prices (annual %)`)) %>%
+  mutate(Population_ages_15_64_female = as.numeric(`Population ages 15-64, female`)) %>%
+  mutate(Population_ages_15_64_male = as.numeric(`Population ages 15-64, male`)) %>%
+  mutate(labour_force = `Population_ages_15_64_female`+`Population_ages_15_64_male`) %>%
+  mutate(Year = as.numeric(Year)) %>%
+  mutate(Life_expectancy_at_birth_female = as.numeric(`Life expectancy at birth, female (years)`))%>%
+  mutate(Life_expectancy_at_birth_male = as.numeric(`Life expectancy at birth, male (years)`))%>%
+  select(-c(`Inflation, consumer prices (annual %)`,`Population ages 15-64, female`,`Population ages 15-64, male`, `Life expectancy at birth, female (years)`, `Life expectancy at birth, male (years)`))
+```
 
 
 
