@@ -124,6 +124,57 @@ The gap in participation rates between men and women is narrowing in developed c
 
 Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab:tabref1) was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@Education].
 
+##  Analysis on unemployed males and females on the bases of qualifications
+
+Advance Education
+
+```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+
+library(webshot)
+webshot::install_phantomjs()
+```
+
+```{r Advancedeved, fig.cap = "Unemployment with advanced education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+Advance_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with advanced education, female (% of female labor force with advanced education)`, `Unemployment with advanced education, male (% of male labor force with advanced education)`)%>%
+  rename (Female = `Unemployment with advanced education, female (% of female labor force with advanced education)`,
+          Male = `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Advance_M_F", values_to = "Percentage")
+
+p <- ggplot(Advance_education_developed, aes(x = Year, y = Percentage, fill = Advance_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(p)
+
+fig
+```
+
+Figure \@ref(fig:Advancedeved) shows the unemployment percentage of males and females with advanced education in developed countries like United states and France.
+
+```{r Advancedeving, fig.cap = "Unemployment with advanced education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+Advance_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with advanced education, female (% of female labor force with advanced education)`, `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  rename (Female = `Unemployment with advanced education, female (% of female labor force with advanced education)`,
+          Male = `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Advance_M_F", values_to = "Percentage")
+
+
+q <- ggplot(Advance_education_developing, aes(x = Year, y = Percentage, fill = Advance_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(q)
+
+fig
+```
+
+Figure \@ref(fig:Advancedeving) shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
 
 
 # Conclusion
