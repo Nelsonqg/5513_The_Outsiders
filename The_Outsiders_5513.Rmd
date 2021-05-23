@@ -85,6 +85,62 @@ mutate(Inflation = as.numeric(`Inflation, consumer prices (annual %)`)) %>%
   select(-c(`Inflation, consumer prices (annual %)`,`Population ages 15-64, female`,`Population ages 15-64, male`, `Life expectancy at birth, female (years)`, `Life expectancy at birth, male (years)`))
 ```
 
+## Inflation
+
+```{r A1, fig.cap = "Inflation vs Labour force" }
+library(purrr)
+library(ggplot2)
+library(patchwork)
+countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
+
+infla_labour <- function(countries){
+  p1 <- analysis %>%
+  filter(`Country Name`== countries)%>%
+    na.omit()%>%
+    ggplot(aes(x=Year, y=Inflation)) +
+  geom_line(color="#69b3a2", size=2) +
+  scale_x_continuous(breaks = c(2011:2019))+
+    scale_y_continuous(labels = scales::comma)+
+  ggtitle("Inflation rate") +
+    labs(title = countries)
+  
+   p2 <- analysis %>%
+  filter(`Country Name`== countries)%>%
+     na.omit()%>%
+ggplot(aes(x=Year, y=labour_force)) +
+  geom_line(color="grey",size=2) +
+  scale_x_continuous(breaks = c(2011:2019))+
+     scale_y_continuous(labels = scales::comma)+
+  ggtitle("number of labour force") +
+     labs(title = countries)
+
+p1 + p2
+}
+
+
+Q1 <- map(countries, infla_labour)
+print(Q1)
+```
+According to Figure\@ref(fig:A1), developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. (https://blogs.worldbank.org/developmenttalk/what-triggered-oil-price-plunge-2014-2016-and-why-it-failed-deliver-economic-impetus-eight-charts), and the global economy has not recovered from the GFC yet. ((https://www.reuters.com/article/us-usa-economy-inflation-idUSKCN0UY1LH)). 
+
+Moreover, low inflation rate does not mean the currency is more valuable. On the contrary, it signals demand for goods and services is lower than expected and will then result in recession and the an increase in unemployment. (https://www.weforum.org/agenda/2019/06/inflation-is-healthy-for-the-economy-but-too-much-can-trigger-a-recession-7d37501704)
+
+Additionally, developed countries usually have more stable inflation rate than developing countries. This is to keep the economy and the currency stable.
+
+```{r A2}
+library(kableExtra)
+t1 <- analysis %>%
+  select(`Country Name`,Year,Inflation,labour_force) %>%
+  filter(Year == "2015") %>%
+   knitr::kable(
+    caption = "Inflation and the labour force in 2015"
+  ) %>%
+  kable_styling(c("hover", "striped"))
+
+t1
+```
+
+Table \@ref(tab:A2) shows the 2015 inflation rate. 
 
 
 \clearpage
