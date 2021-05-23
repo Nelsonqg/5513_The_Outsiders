@@ -176,6 +176,53 @@ fig
 
 Figure \@ref(fig:Advancedeving) shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
 
+Basic Education
+
+```{r Basicdeved, fig.cap = "Unemployment with basic education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+basic_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with basic education, female (% of female labor force with basic education)`, `Unemployment with basic education, male (% of male labor force with basic education)`)%>%
+
+  rename (Female = `Unemployment with basic education, female (% of female labor force with basic education)`,
+          Male = `Unemployment with basic education, male (% of male labor force with basic education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Basic_M_F", values_to = "Percentage")
+
+r <- ggplot(basic_education_developed, aes(x = Year, y = Percentage, fill = Basic_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(r)
+
+fig
+
+```
+
+Figure \@ref(fig:Basicdeved) shows the unemployment percentage of males and females with basic education in developed countries like United states and France.
+
+```{r Basicdeving, fig.cap = "Unemployment with basic education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+basic_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with basic education, female (% of female labor force with basic education)`, `Unemployment with basic education, male (% of male labor force with basic education)`)%>%
+
+
+  rename (Female = `Unemployment with basic education, female (% of female labor force with basic education)`,
+          Male = `Unemployment with basic education, male (% of male labor force with basic education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Basic_M_F", values_to = "Percentage")
+
+s <- ggplot(basic_education_developing, aes(x = Year, y = Percentage, fill = Basic_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(s)
+
+fig
+
+```
+
+Figure \@ref(fig:Basicdeving) shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
+
 
 # Conclusion
 
