@@ -31,3 +31,24 @@ header-includes:
 - \pagestyle{fancy}
 ---
 
+\section*{1}
+
+#1 Janice
+
+
+
+\clearpage
+\section*{2}
+
+#2 Nelson
+
+
+
+\clearpage
+\section*{3}
+
+#3 Ratul
+
+# Conclusion
+
+
