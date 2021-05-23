@@ -311,3 +311,39 @@ byyear %>%
 
 ```
 
+
+
+### Gender Workforce by Industry
+
+
+In summary, females across all countries have lower levels than male occupations in agriculture and industry. On the other hand females have the lead in the services job market, the most notorious case of growth in this industry was Egypt that in 2019 the percentage of females in this industry was 71%.
+
+
+
+```{r allvars, fig.width=15, fig.height=15}
+
+byyear %>% ggplot(aes(x = `Year`,
+                y = `Percentage`, 
+                group = `Country Name`, 
+                color = `Country Name`))+
+  facet_wrap(~fct_relevel(`Series Name`, c("Females in Agriculture (%)", 
+                                           "Males in Agriculture (%)",
+                                           "Females in Industry (%)",
+                                           "Males in Industry (%)", 
+                                           "Females in Services (%)")), 
+             ncol = 2)+
+  theme(legend.position = "bottom")+
+  scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
+                     breaks = seq(0,100,10), 
+                     limits = c(0,100))+
+  geom_line(aes(linetype=`Series Name` %in%  c("Females in Agriculture (%)",
+                                               "Females in Industry (%)", 
+                                               "Females in Services (%)")),
+            size= 1.5, 
+            show.legend = F,
+            alpha = 0.8)+
+  geom_point(size=2)
+
+
+```
+
