@@ -47,7 +47,46 @@ header-includes:
 \clearpage
 \section*{3}
 
-#3 Ratul
+```{r echo= FALSE, warning=FALSE, message=FALSE}
+
+# Libraries
+library(tidyverse)
+library(ggplot2)
+library(readr)
+library(broom)
+library(stringr)
+library(patchwork)
+library(kableExtra)
+library(knitr)
+library(bookdown)
+library(plotly)
+library(dplyr)
+library(tidyr)
+
+Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
+    select(-c('Series Code','Country Code')) %>%
+  rename('2011' = '2011 [YR2011]',
+         '2012' = '2012 [YR2012]', 
+         '2013' = '2013 [YR2013]', 
+         '2014' = '2014 [YR2014]', 
+         '2015' = '2015 [YR2015]', 
+         '2016' = '2016 [YR2016]', 
+         '2017' = '2017 [YR2017]', 
+         '2018' = '2018 [YR2018]', 
+         '2019' = '2019 [YR2019]')
+
+Gender_statistics <- Genderstatistics %>% 
+  filter(str_sub(`Series Name`, 1,12) == "Unemployment")%>%
+ mutate(`2019`= as.numeric(`2019`))%>%
+  pivot_longer(cols = -c(`Country Name`,`Series Name`),
+names_to = "Year",
+values_to = "count") %>% pivot_wider(names_from = "Series Name",
+values_from = "count")
+
+countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
+
+```
+
 
 # Conclusion
 
