@@ -118,6 +118,13 @@ developing <- Gender_statistics%>%
      row_spec(14, bold = T, color = "white", background = "red")
 ```
 
+From table \@ref(tab:tabref) and table \@ref(tab:tabref1) we can summarize that clearly the percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt. 
+
+The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt,the employment rate is more for men than women.[@social]
+
+Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab:tabref1) was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@Education].
+
+
 
 # Conclusion
 
