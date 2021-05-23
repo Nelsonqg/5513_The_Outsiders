@@ -31,3 +31,61 @@ header-includes:
 - \pagestyle{fancy}
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r readingdata, message=FALSE}
+
+
+readingdata <- read_csv("data/088121e0-ea83-4b15-be2a-1bcc36ea893f_Data.csv")
+
+```
+
+
+```{r cleaningdata, fig.width=10,fig.height=9, fig.width=12}
+
+byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`:`2019 [YR2019]`)) %>% 
+  filter(`Series Name` %in%  c("Employment in agriculture, female (% of female employment) (modeled ILO estimate)",
+                               "Employment in agriculture, male (% of male employment) (modeled ILO estimate)",
+                               "Employment in industry, female (% of female employment) (modeled ILO estimate)",
+                               "Employment in industry, male (% of male employment) (modeled ILO estimate)",
+                               "Employment in services, female (% of female employment) (modeled ILO estimate)",
+                               "Employment in services, male (% of male employment) (modeled ILO estimate)")) %>% 
+  mutate(`Series Name` = case_when(`Series Name` == "Employment in agriculture, female (% of female employment) (modeled ILO estimate)" ~ "Females in Agriculture (%)",
+                                   `Series Name` == "Employment in agriculture, male (% of male employment) (modeled ILO estimate)" ~ "Males in Agriculture (%)",
+                                   `Series Name` == "Employment in industry, female (% of female employment) (modeled ILO estimate)" ~ "Females in Industry (%)",
+                                   `Series Name` == "Employment in industry, male (% of male employment) (modeled ILO estimate)" ~ "Males in Industry (%)",
+                                   `Series Name` == "Employment in services, female (% of female employment) (modeled ILO estimate)" ~ "Females in Services (%)",
+                                   `Series Name` == "Employment in services, male (% of male employment) (modeled ILO estimate)" ~ "Males in Services (%)"),
+         `Country Name` = case_when(`Country Name` == "Egypt, Arab Rep." ~ "Egypt",
+                                    TRUE~`Country Name`),
+                                   "2011" = as.double(`2011 [YR2011]`),
+                                   "2012" = as.double(`2012 [YR2012]`),
+                                   "2013" = as.double(`2013 [YR2013]`),
+                                   "2014" = as.double(`2014 [YR2014]`),
+                                   "2015" = as.double(`2015 [YR2015]`),
+                                   "2016" = as.double(`2016 [YR2016]`), 
+                                   "2017" = as.double(`2017 [YR2017]`), 
+                                   "2018" = as.double(`2018 [YR2018]`), 
+                                   "2019" = as.double(`2019 [YR2019]`)) %>% 
+  filter(`Country Name` %in% c("United States", "Egypt","Colombia", "France")) %>% 
+  select(`Series Name`, 
+         `Country Name`, 
+         `2011`:`2019`) %>% 
+  pivot_longer(names_to = "Year", 
+               values_to = "Percentage", 
+               cols =  c(-`Series Name`,
+                         -`Country Name`))
+```
+
