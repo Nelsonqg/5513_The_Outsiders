@@ -161,6 +161,19 @@ analysis %>%
 
 Figure\@ref(fig:A3) shows the lines for female labour force and the male labour force are almost overlapped with each other, meaning the gender distribution for labour force is fairly equal in these countries.
 
+## Life expectancy for female and male at birth
+
+```{r A4}
+analysis %>%
+  ggplot(aes(x = Year))+
+  geom_line(aes(y = Life_expectancy_at_birth_female), color = "red")+
+  geom_line(aes(y = Life_expectancy_at_birth_male), color = "green")+
+  ylab("Life expectancy for female and male")+
+  scale_x_continuous(breaks = c(2011:2019))+
+  facet_wrap(~`Country Name`)
+```
+
+Figure\@ref(fig:A4) shows the life expectancy for female is obviously higher than male. More interestingly, US and France are having a stable life expectancy from 2011 til 2019, while in Egypt and Colombia, the life expectancy for both genders is increasing.
 
 \clearpage
 \section*{2}
