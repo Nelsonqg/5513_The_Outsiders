@@ -1,0 +1,206 @@
+﻿Series Name,Series Code,Country Name,Country Code,2011 [YR2011],2012 [YR2012],2013 [YR2013],2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020]
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,India,IND,8.858360966,9.312445605,10.90764331,6.353194544,5.872426595,4.941026458,2.490886999,4.860699467,7.659694743,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,Colombia,COL,3.417589591,3.167325603,2.018098479,2.897818744,4.990234275,7.514293228,4.312141032,3.240234138,3.525492736,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,Australia,AUS,3.303850156,1.762780156,2.449888641,2.487922705,1.508366722,1.276990945,1.948647409,1.911400944,1.610767873,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,United States,USA,3.156841569,2.069337265,1.464832656,1.622222977,0.118627136,1.261583206,2.130110004,2.442583297,1.812210075,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,France,FRA,2.111597952,1.954195316,0.863715498,0.507758823,0.037514381,0.183334861,1.032282751,1.850815083,1.108254923,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,Russian Federation,RUS,8.440464859,5.074743008,6.753710262,7.823411839,15.53440505,7.04244763,3.683329444,2.878297236,4.470366608,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,"Egypt, Arab Rep.",EGY,10.06492599,7.111729433,9.469719811,10.07021547,10.37049034,13.81360621,29.50660839,14.40146578,..,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,New Zealand,NZL,4.027906674,1.059913184,1.134422664,1.227507506,0.292704628,0.646240284,1.850787675,1.598297038,1.619631902,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,United Kingdom,GBR,3.856112447,2.573234797,2.291666667,1.451120163,0.368046842,1.008417368,2.557755776,2.292839903,1.738104601,..
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,Japan,JPN,-0.267633601,-0.051939058,0.346440326,2.761954083,0.78951789,-0.116666667,0.467211747,0.97990367,0.476973684,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,India,IND,386293739,393251961,400312571,407236416,413890139,420465641,426581977,432438938,438341898,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,Colombia,COL,15612784,15832115,16040859,16258734,16495745,16764845,17056554,17347616,17607445,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,Australia,AUS,7469448,7584244,7698697,7793452,7880342,7965067,8055501,8132842,8212123,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,United States,USA,103835172,104379707,104835932,105296151,105726939,106150693,106437598,106579196,106659549,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,France,FRA,21260651,21243890,21211236,21169272,21117850,21082936,21052287,21020980,20986296,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,Russian Federation,RUS,53343000,53172312,52915902,52598156,52233748,51764791,51253913,50684574,50108784,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,"Egypt, Arab Rep.",EGY,26151054,26649099,27134266,27634194,28162547,28607638,29137611,29709493,30265075,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,New Zealand,NZL,1477140,1480518,1487323,1507480,1533452,1563230,1590400,1612775,1632178,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,United Kingdom,GBR,20853414,20896893,20931370,20981572,21051360,21134373,21214013,21288097,21358489,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,Japan,JPN,40081298,39592692,39097031,38622584,38195060,37834602,37505818,37205507,36930804,..
+"Population, total",SP.POP.TOTL,India,IND,1250288729,1265782790,1280846129,1295604184,1310152403,1324509589,1338658835,1352617328,1366417754,..
+"Population, total",SP.POP.TOTL,Colombia,COL,45662747,46075721,46495492,46967706,47520667,48175048,48909844,49661056,50339443,..
+"Population, total",SP.POP.TOTL,Australia,AUS,22340024,22733465,23128129,23475686,23815995,24190907,24601860,24982688,25365745,..
+"Population, total",SP.POP.TOTL,United States,USA,311556874,313830990,315993715,318301008,320635163,322941311,324985539,326687501,328239523,..
+"Population, total",SP.POP.TOTL,France,FRA,65342780,65659809,65998687,66312067,66548272,66724104,66864379,66965912,67055854,..
+"Population, total",SP.POP.TOTL,Russian Federation,RUS,142960908,143201721,143506995,143819667,144096870,144342397,144496739,144477859,144406261,..
+"Population, total",SP.POP.TOTL,"Egypt, Arab Rep.",EGY,84529250,86422240,88404640,90424654,92442547,94447072,96442593,98423595,100388073,..
+"Population, total",SP.POP.TOTL,New Zealand,NZL,4384000,4408100,4442100,4516500,4609400,4714100,4813600,4900600,4979300,..
+"Population, total",SP.POP.TOTL,United Kingdom,GBR,63258810,63700215,64128273,64602298,65116219,65611593,66058859,66460344,66836327,..
+"Population, total",SP.POP.TOTL,Japan,JPN,127833000,127629000,127445000,127276000,127141000,126994511,126785797,126529100,126264931,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,India,IND,419259847,427045205,434907886,442627860,450078915,457343231,464137262,470659576,477210110,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,Colombia,COL,14791668,15015602,15230598,15458847,15711693,16002838,16321474,16642417,16932143,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,Australia,AUS,7572959,7666241,7757084,7829949,7899670,7978294,8066288,8144071,8225720,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,United States,USA,104049469,104679561,105229771,105788452,106319959,106806372,107149699,107346573,107487469,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,France,FRA,20804867,20775718,20739394,20699421,20652157,20599784,20551398,20503675,20458410,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,Russian Federation,RUS,49203207,48955187,48651870,48330806,48013439,47578475,47151564,46709102,46283423,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,"Egypt, Arab Rep.",EGY,26757664,27255313,27738062,28237225,28767557,29201475,29727602,30300849,30860058,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,New Zealand,NZL,1425648,1428934,1435665,1455200,1480264,1509901,1536244,1557625,1576451,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,United Kingdom,GBR,20670212,20725564,20775108,20841966,20929031,21022272,21112356,21197311,21280122,..
+"Population ages 15-64, male",SP.POP.1564.MA.IN,Japan,JPN,41137820,40659104,40183780,39739205,39349870,38988697,38661365,38365439,38101515,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,India,IND,63.56000137,59.95999908,59.36000061,58.66999817,57.93000031,57.15000153,56.34999847,55.52999878,54.68999863,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,Colombia,COL,7.059999943,7.579999924,7.039999962,6.96999979,7.21999979,7.25,7.739999771,7.809999943,6.599999905,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,Australia,AUS,1.889999986,1.919999957,1.669999957,1.830000043,1.850000024,1.679999948,1.649999976,1.679999948,1.710000038,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,United States,USA,0.769999981,0.75999999,0.670000017,0.699999988,0.75999999,0.769999981,0.75,0.75999999,0.75999999,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,France,FRA,1.889999986,1.850000024,1.860000014,1.659999967,1.610000014,1.620000005,1.570000052,1.379999995,1.49000001,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,Russian Federation,RUS,5.679999828,5.409999847,5.400000095,5.150000095,5.110000134,5.019999981,4.039999962,3.99000001,4.010000229,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,"Egypt, Arab Rep.",EGY,43.36999893,37.59000015,42.86999893,43.22000122,40.20000076,38.38999939,36.90000153,21.69000053,21.20999908,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,New Zealand,NZL,4.599999905,4.420000076,4.269999981,3.980000019,4,4.420000076,4.329999924,3.829999924,3.720000029,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,United Kingdom,GBR,0.660000026,0.689999998,0.600000024,0.709999979,0.649999976,0.629999995,0.649999976,0.620000005,0.579999983,..
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,Japan,JPN,3.710000038,3.539999962,3.390000105,3.299999952,3.220000029,3.049999952,2.99000001,3.019999981,2.950000048,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,India,IND,45.20999908,43.52000046,43.09000015,42.54000092,41.97000122,41.31999969,40.75999832,40.24000168,39.56000137,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,Colombia,COL,25.29999924,24.39999962,23.47999954,22.90999985,22.37999916,22.36000061,22.87999916,23.06999969,22.30999947,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,Australia,AUS,3.589999914,3.539999962,3.410000086,3.619999886,3.309999943,3.430000067,3.410000086,3.440000057,3.289999962,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,United States,USA,2.029999971,1.909999967,1.870000005,1.899999976,2.019999981,1.99000001,2.00999999,1.889999986,1.870000005,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,France,FRA,3.819999933,3.880000114,4.190000057,3.930000067,3.730000019,4,3.549999952,3.529999971,3.5,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,Russian Federation,RUS,9.609999657,9.170000076,8.510000229,8.220000267,8.220000267,8.319999695,7.659999847,7.670000076,7.570000172,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,"Egypt, Arab Rep.",EGY,25.76000023,24.47999954,24.12999916,23.45000076,22.17000008,22.20999908,21.98999977,21.65999985,20.45999908,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,New Zealand,NZL,8.930000305,8.800000191,8.369999886,8.25,8.029999733,8.56000042,8.130000114,7.789999962,7.739999771,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,United Kingdom,GBR,1.710000038,1.620000005,1.460000038,1.730000019,1.570000052,1.559999943,1.620000005,1.470000029,1.460000038,..
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,Japan,JPN,4.150000095,4.099999905,4.010000229,3.980000019,3.940000057,3.849999905,3.789999962,3.869999886,3.720000029,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,India,IND,17.12000084,18.77000046,18.43000031,18.17000008,17.95000076,17.73999977,17.52000046,17.28000069,17.35000038,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,Colombia,COL,16.06999969,15.96000004,14.72999954,14.34000015,14,13.31999969,13.96000004,14.85999966,14.39999962,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,Australia,AUS,8.529999733,8.359999657,8.300000191,8.109999657,7.659999847,7.900000095,7.630000114,8.149999619,7.449999809,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,United States,USA,8.720000267,8.75,8.819999695,8.859999657,8.829999924,8.710000038,8.710000038,8.779999733,8.869999886,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,France,FRA,10.53999996,10.26000023,10.14000034,9.680000305,9.390000343,9.279999733,9.890000343,9.579999924,9.539999962,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,Russian Federation,RUS,17.05999947,17.05999947,16.87999916,16.54000092,16.05999947,16,15.78999996,15.73999977,15.44999981,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,"Egypt, Arab Rep.",EGY,5.090000153,5.510000229,5.059999943,5.019999981,5.630000114,6.21999979,6.840000153,8.25,8.010000229,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,New Zealand,NZL,9.31000042,9.100000381,9.140000343,9.539999962,10,8.960000038,9.399999619,9.289999962,8.93999958,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,United Kingdom,GBR,7.510000229,7.650000095,7.679999828,7.940000057,7.670000076,7.610000134,7.670000076,7.449999809,7.699999809,..
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,Japan,JPN,14.52000046,14.38000011,14.35999966,14.38000011,14.47000027,14.21000004,14.14999962,14.14000034,13.89999962,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,India,IND,24.79000092,25.86000061,25.94000053,26.10000038,26.25,26.53000069,26.72999954,26.88999939,27.06999969,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,Colombia,COL,23.86000061,24.01000023,23.17000008,23.70999908,24.04999924,23.82999992,23.35000038,23.65999985,24.20999908,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,Australia,AUS,30.96999931,30.95999908,30.62999916,30.53000069,29.34000015,29.17000008,29.60000038,30.09000015,29.17000008,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,United States,USA,29.20999908,29.12000084,29.45999908,29.45999908,29.22999954,29.19000053,29.12999916,29.36000061,29.32999992,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,France,FRA,32.58000183,32.13000107,31.46999931,30.5,30.40999985,30.31999969,30.05999947,30.05999947,30.52000046,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,Russian Federation,RUS,37.45999908,38.13000107,38.18999863,38.11000061,37.88999939,37.41999817,37.50999832,37.27999878,37.52999878,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,"Egypt, Arab Rep.",EGY,28.12999916,29.62999916,29,29.47999954,30.01000023,30.55999947,31.63999939,31.72999954,31.93000031,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,New Zealand,NZL,29.45000076,29.28000069,29.21999931,30.12000084,31.86000061,30.10000038,30.29000092,29.29999924,28.63999939,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,United Kingdom,GBR,29.29999924,28.94000053,28.60000038,28.56999969,28.22999954,27.95999908,27.57999992,27.53000069,27.34000015,..
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,Japan,JPN,33.15999985,33.18999863,33.31999969,33.04999924,32.88000107,32.70000076,32.72999954,32.52000046,32.36000061,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,India,IND,19.31999969,21.27000046,22.20999908,23.15999985,24.12000084,25.11000061,26.13999939,27.19000053,27.95999908,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,Colombia,COL,76.87000275,76.45999908,78.23000336,78.69000244,78.77999878,79.43000031,78.30000305,77.33000183,79.01000214,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,Australia,AUS,89.58000183,89.72000122,90.02999878,90.05999756,90.48999786,90.41999817,90.72000122,90.18000031,90.83000183,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,United States,USA,90.51000214,90.48999786,90.51000214,90.44000244,90.41000366,90.52999878,90.54000092,90.47000122,90.37000275,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,France,FRA,87.56999969,87.88999939,88.01000214,88.66000366,89,89.09999847,88.54000092,89.04000092,88.97000122,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,Russian Federation,RUS,77.26000214,77.52999878,77.72000122,78.30000305,78.83000183,78.98000336,80.16999817,80.26999664,80.54000092,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,"Egypt, Arab Rep.",EGY,51.54000092,56.90000153,52.06999969,51.75999832,54.16999817,55.38999939,56.25999832,70.06999969,70.77999878,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,New Zealand,NZL,86.08999634,86.48000336,86.59999847,86.48000336,86,86.62000275,86.26000214,86.88999939,87.33999634,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,United Kingdom,GBR,91.83000183,91.66999817,91.72000122,91.34999847,91.68000031,91.76999664,91.68000031,91.93000031,91.72000122,..
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,Japan,JPN,81.76999664,82.08999634,82.25,82.31999969,82.30999756,82.73999786,82.86000061,82.83999634,83.15000153,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,India,IND,30,30.62999916,30.96999931,31.37000084,31.78000069,32.13999939,32.5,32.86999893,33.36999893,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,Colombia,COL,50.84000015,51.59000015,53.34999847,53.38000107,53.56000137,53.81999969,53.75999832,53.27999878,53.47999954,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,Australia,AUS,65.44000244,65.5,65.94999695,65.84999847,67.34999847,67.41000366,66.98999786,66.48000336,67.54000092,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,United States,USA,68.76000214,68.98000336,68.66999817,68.62999725,68.76000214,68.81999969,68.87000275,68.75,68.80999756,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,France,FRA,63.59999847,63.99000168,64.33999634,65.56999969,65.86000061,65.68000031,66.38999939,66.41000366,65.98000336,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,Russian Federation,RUS,52.93000031,52.70000076,53.29999924,53.66999817,53.90000153,54.25999832,54.83000183,55.04999924,54.90999985,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,"Egypt, Arab Rep.",EGY,46.11999893,45.88999939,46.86999893,47.06999969,47.81999969,47.22999954,46.36999893,46.61999893,47.61000061,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,New Zealand,NZL,61.61000061,61.91999817,62.40999985,61.63999939,60.11000061,61.34000015,61.59000015,62.90999985,63.61999893,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,United Kingdom,GBR,68.98999786,69.44000244,69.94999695,69.69999695,70.19999695,70.48000336,70.80000305,71,71.19999695,..
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,Japan,JPN,62.68999863,62.70000076,62.66999817,62.97000122,63.18000031,63.45999908,63.49000168,63.61000061,63.93000031,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,India,IND,..,16.61000061,..,..,..,..,..,24.69000053,23.42000008,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,Colombia,COL,13.21000004,13.06000042,12.51000023,11.93000031,11.81999969,12.82999992,12.44999981,12.94999981,13.35999966,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,Australia,AUS,3.430000067,3.410000086,3.25999999,..,..,..,..,..,..,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,United States,USA,5.170000076,4.989999771,4.449999809,3.819999933,3.150000095,2.960000038,2.789999962,2.480000019,2.410000086,5.960000038
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,France,FRA,5.349999905,5.449999809,5.889999866,6.28000021,6.099999905,5.849999905,5.440000057,5.440000057,4.909999847,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,Russian Federation,RUS,6,5.110000134,5.179999828,4.730000019,5.199999809,5.400000095,4.909999847,4.809999943,4.320000172,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,"Egypt, Arab Rep.",EGY,31.88999939,32.33000183,34.11000061,31.45999908,32.79000092,30.78000069,31.13999939,34.59000015,..,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,New Zealand,NZL,4.420000076,4.960000038,4.230000019,..,..,..,..,..,..,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,United Kingdom,GBR,4.150000095,4.260000229,3.670000076,3.180000067,2.940000057,3.079999924,2.910000086,2.49000001,2.390000105,..
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,Japan,JPN,..,3.5,3.329999924,..,2.630000114,2.549999952,2.319999933,2.50999999,2.029999971,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,India,IND,..,6.5,..,..,..,..,..,12.64000034,12.84000015,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,Colombia,COL,9.970000267,9.789999962,8.880000114,8.420000076,8.510000229,9.56000042,9.090000153,9.300000191,9.460000038,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,Australia,AUS,2.869999886,2.670000076,3.529999971,..,..,..,..,..,..,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,United States,USA,5.099999905,4.489999771,4.190000057,3.559999943,2.910000086,2.859999895,2.579999924,2.420000076,2.349999905,5.199999809
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,France,FRA,4.980000019,5.420000076,6.099999905,6.369999886,6.559999943,5.539999962,4.980000019,5.449999809,5.320000172,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,Russian Federation,RUS,6.75,5.570000172,5.539999962,5.300000191,5.489999771,5.460000038,5.179999828,4.769999981,4.550000191,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,"Egypt, Arab Rep.",EGY,13.65999985,15.11999989,15.18999958,13.63000011,15.19999981,14.77999973,14.72999954,15.09000015,..,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,New Zealand,NZL,4,4.610000134,3.670000076,..,..,..,..,..,..,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,United Kingdom,GBR,4.46999979,4.309999943,4.199999809,3.160000086,2.950000048,2.75999999,2.609999895,2.539999962,2.569999933,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,Japan,JPN,..,3.480000019,3.450000048,..,2.779999971,2.690000057,2.309999943,2.119999886,2.029999971,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,India,IND,..,4.159999847,..,..,..,..,..,2.900000095,2.089999914,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,Colombia,COL,11.10000038,10.82999992,9.430000305,8.899999619,8.670000076,8.43999958,8.710000038,8.880000114,10.43999958,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,Australia,AUS,8.930000305,9.489999771,8.029999733,..,..,..,..,..,..,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,United States,USA,15.61999989,14.82999992,13.07999992,11.55000019,8.989999771,9.68999958,8.020000458,7.079999924,6.849999905,13.98999977
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,France,FRA,14.02999973,14.63000011,16,16.14999962,16.05999947,16.98999977,16.12999916,15.56000042,15.55000019,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,Russian Federation,RUS,15.27000046,12.81999969,13.82999992,12.76000023,13.57999992,13.93999958,13.93999958,13.13000011,11.06000042,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,"Egypt, Arab Rep.",EGY,16.29000092,18.20999908,15.46000004,12.84000015,8.350000381,7.96999979,5.460000038,6.150000095,..,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,New Zealand,NZL,10,10.68000031,10.05000019,..,..,..,..,..,..,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,United Kingdom,GBR,12.25,12.40999985,13.11999989,10.46000004,9.020000458,7.619999886,6.929999828,6.150000095,6.230000019,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,Japan,JPN,..,..,..,..,..,..,..,..,..,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,India,IND,..,2.109999895,..,..,..,..,..,4.409999847,4.179999828,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,Colombia,COL,6.230000019,6.099999905,5.630000114,5.340000153,4.96999979,5.130000114,5.210000038,5.400000095,6.340000153,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,Australia,AUS,8.369999886,9,9.010000229,..,..,..,..,..,..,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,United States,USA,12.53999996,11.60000038,9.640000343,7.420000076,7.119999886,6.309999943,5.739999771,5.21999979,4.590000153,10.52000046
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,France,FRA,14.5,15.65999985,16.52000046,18.26000023,18.76000023,18.45999908,17.53000069,16.17000008,15.60000038,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,Russian Federation,RUS,17.01000023,14.22999954,13.64000034,13.55000019,13.96000004,14.06999969,13.26000023,12.43000031,10.72999954,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,"Egypt, Arab Rep.",EGY,7.940000057,9.109999657,9.289999962,11.40999985,9.100000381,8.659999847,7.139999866,3.890000105,..,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,New Zealand,NZL,10.21000004,9.800000191,8.979999542,..,..,..,..,..,..,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,United Kingdom,GBR,15.32999992,14.80000019,14.11999989,11.64999962,9.800000191,8.579999924,7.360000134,6.429999828,6.71999979,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,Japan,JPN,..,..,..,..,..,..,..,..,..,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,India,IND,..,13.97999954,..,..,..,..,..,16.19000053,15.43999958,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,Colombia,COL,16.64999962,15.65999985,14.47000027,13.35000038,13.10000038,13.14000034,14.02000046,14.02000046,14.77999973,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,Australia,AUS,5.860000134,5.820000172,6.820000172,..,..,..,..,..,..,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,United States,USA,10.90999985,10.13000011,9.210000038,7.929999828,7,6.409999847,5.730000019,5.190000057,4.820000172,11.10000038
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,France,FRA,9.56000042,10.01000023,10.5,11.03999996,11.05000019,10.93000031,10.64000034,10.42000008,9.840000153,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,Russian Federation,RUS,5.460000038,4.449999809,4.46999979,4.380000114,4.869999886,4.75,4.630000114,4.159999847,3.849999905,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,"Egypt, Arab Rep.",EGY,33.99000168,35.77000046,34.40999985,32.90999985,34.77999878,32.70000076,33.15999985,23.35000038,..,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,New Zealand,NZL,7.75,8.569999695,7.489999771,..,..,..,..,..,..,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,United Kingdom,GBR,8.100000381,8.279999733,8.039999962,6.789999962,6.039999962,5.329999924,4.610000134,4.840000153,3.960000038,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,Japan,JPN,..,4.5,4.090000153,..,3.549999952,3.299999952,3.069999933,2.799999952,2.539999962,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,India,IND,..,5.170000076,..,..,..,..,..,9.949999809,9.119999886,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,Colombia,COL,10.18000031,9.180000305,8.75,8.180000305,7.329999924,7.559999943,8.050000191,8.220000267,9.199999809,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,Australia,AUS,4.190000057,4.730000019,5.179999828,..,..,..,..,..,..,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,United States,USA,12.10999966,10.64999962,10.06000042,8.220000267,7.159999847,6.519999981,5.789999962,5.159999847,4.849999905,9.970000267
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,France,FRA,7.650000095,8.899999619,9.81000042,10.31999969,10.56000042,10.38000011,9.600000381,9.010000229,8.590000153,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,Russian Federation,RUS,5.949999809,5.019999981,5.110000134,4.800000191,5.289999962,5.239999771,4.730000019,4.269999981,4.079999924,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,"Egypt, Arab Rep.",EGY,10.97000027,11.96000004,11.40999985,10.94999981,11.18000031,10.82999992,10.52000046,7.5,..,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,New Zealand,NZL,6.269999981,6.650000095,5.300000191,..,..,..,..,..,..,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,United Kingdom,GBR,8.880000114,8.789999962,8.399999619,6.889999866,5.909999847,5.349999905,4.900000095,4.440000057,4.03000021,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,Japan,JPN,..,5.5,5.110000134,..,4.380000114,4.059999943,3.630000114,3.339999914,3.059999943,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,India,IND,..,3.690000057,..,..,..,..,..,5.300000191,4.940000057,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,Colombia,COL,13.10000038,12.65999985,11.67000008,11.02999973,10.84000015,11.21000004,11.51000023,11.78999996,12.75,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,Australia,AUS,5.300000191,5.329999924,5.610000134,6.170000076,6.070000172,5.78000021,5.670000076,5.320000172,5.099999905,6.360000134
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,United States,USA,8.460000038,7.889999866,7.079999924,6.059999943,5.179999828,4.789999962,4.309999943,3.839999914,3.609999895,8.350000381
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,France,FRA,9.119999886,9.359999657,9.789999962,10.02999973,9.909999847,9.840000153,9.369999886,9.050000191,8.380000114,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,Russian Federation,RUS,6.090000153,5.070000172,5.139999866,4.820000172,5.309999943,5.349999905,5.050000191,4.78000021,4.329999924,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,"Egypt, Arab Rep.",EGY,22.44000053,24.01000023,24.17000008,24,24.80999947,23.57999992,23.01000023,21.34000015,..,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,New Zealand,NZL,6.760000229,7.389999866,6.380000114,6.070000172,5.900000095,5.460000038,5.210000038,4.489999771,4.429999828,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,United Kingdom,GBR,7.340000153,7.389999866,7.039999962,5.820000172,5.119999886,4.679999828,4.21999979,3.940000057,3.529999971,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,Japan,JPN,4.139999866,4,3.700000048,3.400000095,3.099999905,2.799999952,2.700000048,2.200000048,2.200000048,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,India,IND,..,2.400000095,..,..,..,..,..,5.340000153,5.369999886,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,Colombia,COL,7.909999847,7.550000191,7.070000172,6.71999979,6.360000134,6.78000021,6.869999886,7.090000153,7.880000114,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,Australia,AUS,4.889999866,5.139999866,5.710000038,6,6.039999962,5.650000095,5.519999981,5.28000021,5.210000038,6.559999943
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,United States,USA,9.369999886,8.229999542,7.639999866,6.260000229,5.369999886,4.940000057,4.400000095,3.950000048,3.720000029,7.800000191
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,France,FRA,8.529999733,9.43999958,10.03999996,10.53999996,10.77000046,10.22000027,9.43999958,8.989999771,8.5,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,Russian Federation,RUS,6.96999979,5.789999962,5.760000229,5.480000019,5.820000172,5.760000229,5.360000134,4.909999847,4.650000095,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,"Egypt, Arab Rep.",EGY,8.770000458,9.229999542,9.800000191,9.729999542,9.390000343,8.840000153,8.220000267,6.769999981,..,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,New Zealand,NZL,6.25,6.519999981,5.21999979,4.730000019,4.96999979,4.739999771,4.25,4.179999828,3.819999933,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,United Kingdom,GBR,8.640000343,8.319999695,7.949999809,6.360000134,5.449999809,4.920000076,4.429999828,4.050000191,3.920000076,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,Japan,JPN,4.800000191,4.599999905,4.300000191,3.700000048,3.599999905,3.299999952,3,2.599999905,2.5,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,India,IND,68.218,68.68,69.106,69.491,69.835,70.142,70.425,70.692,70.95,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Colombia,COL,78.598,78.789,78.978,79.164,79.346,79.523,79.694,79.859,80.019,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Australia,AUS,84.2,84.3,84.3,84.4,84.5,84.6,84.6,84.9,85,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,United States,USA,81.1,81.2,81.2,81.3,81.2,81.1,81.1,81.2,81.4,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,France,FRA,85.7,85.4,85.6,86.1,85.6,85.8,85.7,85.9,85.6,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Russian Federation,RUS,75.61,75.86,76.3,76.47,76.71,77.06,77.64,77.82,78.17,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,"Egypt, Arab Rep.",EGY,72.787,72.97,73.161,73.36,73.563,73.766,73.967,74.162,74.35,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,New Zealand,NZL,82.8,83,83.2,83.3,83.27,83.4,83.4,83.6,83.5,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,United Kingdom,GBR,83,82.8,82.9,83.2,82.8,83,83.1,83.1,83.1,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Japan,JPN,85.9,86.41,86.61,86.83,86.99,87.14,87.26,87.32,87.45,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,India,IND,66.115,66.488,66.84,67.167,67.468,67.745,68,68.239,68.464,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Colombia,COL,72.689,72.95,73.205,73.45,73.686,73.91,74.124,74.33,74.528,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Australia,AUS,79.7,79.9,80.1,80.3,80.4,80.4,80.5,80.7,80.9,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,United States,USA,76.3,76.4,76.4,76.5,76.3,76.1,76.1,76.2,76.3,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,France,FRA,78.7,78.7,79,79.5,79.2,79.5,79.6,79.7,79.7,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Russian Federation,RUS,64.04,64.56,65.13,65.29,65.92,66.5,67.51,67.75,68.24,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,"Egypt, Arab Rep.",EGY,68.391,68.596,68.791,68.974,69.144,69.302,69.453,69.599,69.742,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,New Zealand,NZL,79.1,79.4,79.7,79.6,79.73,79.91,80,80.2,80,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,United Kingdom,GBR,79,79.1,79.2,79.5,79.2,79.4,79.5,79.5,79.4,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Japan,JPN,79.44,79.94,80.21,80.5,80.75,80.98,81.09,81.25,81.41,..
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Data from database: Gender Statistics,,,,,,,,,,,,,
+Last Updated: 04/27/2021,,,,,,,,,,,,,

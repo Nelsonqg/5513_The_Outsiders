@@ -1,0 +1,45 @@
+---
+title: "Presentation for Country Fire Condition"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    source_code: embed
+---
+
+
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE, echo=FALSE}
+knitr::opts_chunk$set(include=TRUE, message=FALSE, warning=FALSE, echo=FALSE)
+library(readr)
+library(tidyverse)
+library(knitr)
+library(dplyr)
+library(ggplot2)
+library(kableExtra)
+library(tibble)
+```
+
+
+The Most Frequent Fire Incident in Victoria
+=================================================================================
+Row
+---------------------------------------------------------------------------------
+### The Most Frequent Fire Incident in Victoria (July 2015 to June 2016)
+
+The Volunteer Structure For 2016
+=================================================================================
+
+Column {data-width=650}
+---------------------------------------------------------------------------------
+
+### Statewide Age Distribution
+
+
+### Statewide Serve Year Situation 
+
+
+
+Column {data-width=350}
+---------------------------------------------------------------------------------
+

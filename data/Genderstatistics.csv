@@ -1,0 +1,81 @@
+Series Name,Series Code,Country Name,Country Code,2011 [YR2011],2012 [YR2012],2013 [YR2013],2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019]
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,Colombia,COL,3.417589591,3.167325603,2.018098479,2.897818744,4.990234275,7.514293228,4.312141032,3.240234138,3.525492736
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,United States,USA,3.156841569,2.069337265,1.464832656,1.622222977,0.118627136,1.261583206,2.130110004,2.442583297,1.812210075
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,France,FRA,2.111597952,1.954195316,0.863715498,0.507758823,0.037514381,0.183334861,1.032282751,1.850815083,1.108254923
+"Inflation, consumer prices (annual %)",FP.CPI.TOTL.ZG,"Egypt, Arab Rep.",EGY,10.06492599,7.111729433,9.469719811,10.07021547,10.37049034,13.81360621,29.50660839,14.40146578,..
+"Population ages 15-64, female",SP.POP.1564.FE.IN,Colombia,COL,15612784,15832115,16040859,16258734,16495745,16764845,17056554,17347616,17607445
+"Population ages 15-64, female",SP.POP.1564.FE.IN,United States,USA,103835172,104379707,104835932,105296151,105726939,106150693,106437598,106579196,106659549
+"Population ages 15-64, female",SP.POP.1564.FE.IN,France,FRA,21260651,21243890,21211236,21169272,21117850,21082936,21052287,21020980,20986296
+"Population ages 15-64, female",SP.POP.1564.FE.IN,"Egypt, Arab Rep.",EGY,26151054,26649099,27134266,27634194,28162547,28607638,29137611,29709493,30265075
+"Population, total",SP.POP.TOTL,Colombia,COL,45662747,46075721,46495492,46967706,47520667,48175048,48909844,49661056,50339443
+"Population, total",SP.POP.TOTL,United States,USA,311556874,313830990,315993715,318301008,320635163,322941311,324985539,326687501,328239523
+"Population, total",SP.POP.TOTL,France,FRA,65342780,65659809,65998687,66312067,66548272,66724104,66864379,66965912,67055854
+"Population, total",SP.POP.TOTL,"Egypt, Arab Rep.",EGY,84529250,86422240,88404640,90424654,92442547,94447072,96442593,98423595,100388073
+"Population ages 15-64, male",SP.POP.1564.MA.IN,Colombia,COL,14791668,15015602,15230598,15458847,15711693,16002838,16321474,16642417,16932143
+"Population ages 15-64, male",SP.POP.1564.MA.IN,United States,USA,104049469,104679561,105229771,105788452,106319959,106806372,107149699,107346573,107487469
+"Population ages 15-64, male",SP.POP.1564.MA.IN,France,FRA,20804867,20775718,20739394,20699421,20652157,20599784,20551398,20503675,20458410
+"Population ages 15-64, male",SP.POP.1564.MA.IN,"Egypt, Arab Rep.",EGY,26757664,27255313,27738062,28237225,28767557,29201475,29727602,30300849,30860058
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,Colombia,COL,7.059999943,7.579999924,7.039999962,6.96999979,7.21999979,7.25,7.739999771,7.809999943,6.599999905
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,United States,USA,0.769999981,0.75999999,0.670000017,0.699999988,0.75999999,0.769999981,0.75,0.75999999,0.75999999
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,France,FRA,1.889999986,1.850000024,1.860000014,1.659999967,1.610000014,1.620000005,1.570000052,1.379999995,1.49000001
+"Employment in agriculture, female (% of female employment) (modeled ILO estimate)",SL.AGR.EMPL.FE.ZS,"Egypt, Arab Rep.",EGY,43.36999893,37.59000015,42.86999893,43.22000122,40.20000076,38.38999939,36.90000153,21.69000053,21.20999908
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,Colombia,COL,25.29999924,24.39999962,23.47999954,22.90999985,22.37999916,22.36000061,22.87999916,23.06999969,22.30999947
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,United States,USA,2.029999971,1.909999967,1.870000005,1.899999976,2.019999981,1.99000001,2.00999999,1.889999986,1.870000005
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,France,FRA,3.819999933,3.880000114,4.190000057,3.930000067,3.730000019,4,3.549999952,3.529999971,3.5
+"Employment in agriculture, male (% of male employment) (modeled ILO estimate)",SL.AGR.EMPL.MA.ZS,"Egypt, Arab Rep.",EGY,25.76000023,24.47999954,24.12999916,23.45000076,22.17000008,22.20999908,21.98999977,21.65999985,20.45999908
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,Colombia,COL,16.06999969,15.96000004,14.72999954,14.34000015,14,13.31999969,13.96000004,14.85999966,14.39999962
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,United States,USA,8.720000267,8.75,8.819999695,8.859999657,8.829999924,8.710000038,8.710000038,8.779999733,8.869999886
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,France,FRA,10.53999996,10.26000023,10.14000034,9.680000305,9.390000343,9.279999733,9.890000343,9.579999924,9.539999962
+"Employment in industry, female (% of female employment) (modeled ILO estimate)",SL.IND.EMPL.FE.ZS,"Egypt, Arab Rep.",EGY,5.090000153,5.510000229,5.059999943,5.019999981,5.630000114,6.21999979,6.840000153,8.25,8.010000229
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,Colombia,COL,23.86000061,24.01000023,23.17000008,23.70999908,24.04999924,23.82999992,23.35000038,23.65999985,24.20999908
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,United States,USA,29.20999908,29.12000084,29.45999908,29.45999908,29.22999954,29.19000053,29.12999916,29.36000061,29.32999992
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,France,FRA,32.58000183,32.13000107,31.46999931,30.5,30.40999985,30.31999969,30.05999947,30.05999947,30.52000046
+"Employment in industry, male (% of male employment) (modeled ILO estimate)",SL.IND.EMPL.MA.ZS,"Egypt, Arab Rep.",EGY,28.12999916,29.62999916,29,29.47999954,30.01000023,30.55999947,31.63999939,31.72999954,31.93000031
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,Colombia,COL,76.87000275,76.45999908,78.23000336,78.69000244,78.77999878,79.43000031,78.30000305,77.33000183,79.01000214
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,United States,USA,90.51000214,90.48999786,90.51000214,90.44000244,90.41000366,90.52999878,90.54000092,90.47000122,90.37000275
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,France,FRA,87.56999969,87.88999939,88.01000214,88.66000366,89,89.09999847,88.54000092,89.04000092,88.97000122
+"Employment in services, female (% of female employment) (modeled ILO estimate)",SL.SRV.EMPL.FE.ZS,"Egypt, Arab Rep.",EGY,51.54000092,56.90000153,52.06999969,51.75999832,54.16999817,55.38999939,56.25999832,70.06999969,70.77999878
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,Colombia,COL,50.84000015,51.59000015,53.34999847,53.38000107,53.56000137,53.81999969,53.75999832,53.27999878,53.47999954
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,United States,USA,68.76000214,68.98000336,68.66999817,68.62999725,68.76000214,68.81999969,68.87000275,68.75,68.80999756
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,France,FRA,63.59999847,63.99000168,64.33999634,65.56999969,65.86000061,65.68000031,66.38999939,66.41000366,65.98000336
+"Employment in services, male (% of male employment) (modeled ILO estimate)",SL.SRV.EMPL.MA.ZS,"Egypt, Arab Rep.",EGY,46.11999893,45.88999939,46.86999893,47.06999969,47.81999969,47.22999954,46.36999893,46.61999893,47.61000061
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,Colombia,COL,13.21000004,13.06000042,12.51000023,11.93000031,11.81999969,12.82999992,12.44999981,12.94999981,13.35999966
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,United States,USA,5.170000076,4.989999771,4.449999809,3.819999933,3.150000095,2.960000038,2.789999962,2.480000019,2.410000086
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,France,FRA,5.349999905,5.449999809,5.889999866,6.28000021,6.099999905,5.849999905,5.440000057,5.440000057,4.909999847
+"Unemployment with advanced education, female (% of female labor force with advanced education)",SL.UEM.ADVN.FE.ZS,"Egypt, Arab Rep.",EGY,31.88999939,32.33000183,34.11000061,31.45999908,32.79000092,30.78000069,31.13999939,34.59000015,..
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,Colombia,COL,9.970000267,9.789999962,8.880000114,8.420000076,8.510000229,9.56000042,9.090000153,9.300000191,9.460000038
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,United States,USA,5.099999905,4.489999771,4.190000057,3.559999943,2.910000086,2.859999895,2.579999924,2.420000076,2.349999905
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,France,FRA,4.980000019,5.420000076,6.099999905,6.369999886,6.559999943,5.539999962,4.980000019,5.449999809,5.320000172
+"Unemployment with advanced education, male (% of male labor force with advanced education)",SL.UEM.ADVN.MA.ZS,"Egypt, Arab Rep.",EGY,13.65999985,15.11999989,15.18999958,13.63000011,15.19999981,14.77999973,14.72999954,15.09000015,..
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,Colombia,COL,11.10000038,10.82999992,9.430000305,8.899999619,8.670000076,8.43999958,8.710000038,8.880000114,10.43999958
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,United States,USA,15.61999989,14.82999992,13.07999992,11.55000019,8.989999771,9.68999958,8.020000458,7.079999924,6.849999905
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,France,FRA,14.02999973,14.63000011,16,16.14999962,16.05999947,16.98999977,16.12999916,15.56000042,15.55000019
+"Unemployment with basic education, female (% of female labor force with basic education)",SL.UEM.BASC.FE.ZS,"Egypt, Arab Rep.",EGY,16.29000092,18.20999908,15.46000004,12.84000015,8.350000381,7.96999979,5.460000038,6.150000095,..
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,Colombia,COL,6.230000019,6.099999905,5.630000114,5.340000153,4.96999979,5.130000114,5.210000038,5.400000095,6.340000153
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,United States,USA,12.53999996,11.60000038,9.640000343,7.420000076,7.119999886,6.309999943,5.739999771,5.21999979,4.590000153
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,France,FRA,14.5,15.65999985,16.52000046,18.26000023,18.76000023,18.45999908,17.53000069,16.17000008,15.60000038
+"Unemployment with basic education, male (% of male labor force with basic education)",SL.UEM.BASC.MA.ZS,"Egypt, Arab Rep.",EGY,7.940000057,9.109999657,9.289999962,11.40999985,9.100000381,8.659999847,7.139999866,3.890000105,..
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,Colombia,COL,16.64999962,15.65999985,14.47000027,13.35000038,13.10000038,13.14000034,14.02000046,14.02000046,14.77999973
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,United States,USA,10.90999985,10.13000011,9.210000038,7.929999828,7,6.409999847,5.730000019,5.190000057,4.820000172
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,France,FRA,9.56000042,10.01000023,10.5,11.03999996,11.05000019,10.93000031,10.64000034,10.42000008,9.840000153
+"Unemployment with intermediate education, female (% of female labor force with intermediate education)",SL.UEM.INTM.FE.ZS,"Egypt, Arab Rep.",EGY,33.99000168,35.77000046,34.40999985,32.90999985,34.77999878,32.70000076,33.15999985,23.35000038,..
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,Colombia,COL,10.18000031,9.180000305,8.75,8.180000305,7.329999924,7.559999943,8.050000191,8.220000267,9.199999809
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,United States,USA,12.10999966,10.64999962,10.06000042,8.220000267,7.159999847,6.519999981,5.789999962,5.159999847,4.849999905
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,France,FRA,7.650000095,8.899999619,9.81000042,10.31999969,10.56000042,10.38000011,9.600000381,9.010000229,8.590000153
+"Unemployment with intermediate education, male (% of male labor force with intermediate education)",SL.UEM.INTM.MA.ZS,"Egypt, Arab Rep.",EGY,10.97000027,11.96000004,11.40999985,10.94999981,11.18000031,10.82999992,10.52000046,7.5,..
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,Colombia,COL,13.10000038,12.65999985,11.67000008,11.02999973,10.84000015,11.21000004,11.51000023,11.78999996,12.75
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,United States,USA,8.460000038,7.889999866,7.079999924,6.059999943,5.179999828,4.789999962,4.309999943,3.839999914,3.609999895
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,France,FRA,9.119999886,9.359999657,9.789999962,10.02999973,9.909999847,9.840000153,9.369999886,9.050000191,8.380000114
+"Unemployment, female (% of female labor force) (national estimate)",SL.UEM.TOTL.FE.NE.ZS,"Egypt, Arab Rep.",EGY,22.44000053,24.01000023,24.17000008,24,24.80999947,23.57999992,23.01000023,21.34000015,..
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,Colombia,COL,7.909999847,7.550000191,7.070000172,6.71999979,6.360000134,6.78000021,6.869999886,7.090000153,7.880000114
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,United States,USA,9.369999886,8.229999542,7.639999866,6.260000229,5.369999886,4.940000057,4.400000095,3.950000048,3.720000029
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,France,FRA,8.529999733,9.43999958,10.03999996,10.53999996,10.77000046,10.22000027,9.43999958,8.989999771,8.5
+"Unemployment, male (% of male labor force) (national estimate)",SL.UEM.TOTL.MA.NE.ZS,"Egypt, Arab Rep.",EGY,8.770000458,9.229999542,9.800000191,9.729999542,9.390000343,8.840000153,8.220000267,6.769999981,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Colombia,COL,78.598,78.789,78.978,79.164,79.346,79.523,79.694,79.859,80.019
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,United States,USA,81.1,81.2,81.2,81.3,81.2,81.1,81.1,81.2,81.4
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,France,FRA,85.7,85.4,85.6,86.1,85.6,85.8,85.7,85.9,85.6
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,"Egypt, Arab Rep.",EGY,72.787,72.97,73.161,73.36,73.563,73.766,73.967,74.162,74.35
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Colombia,COL,72.689,72.95,73.205,73.45,73.686,73.91,74.124,74.33,74.528
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,United States,USA,76.3,76.4,76.4,76.5,76.3,76.1,76.1,76.2,76.3
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,France,FRA,78.7,78.7,79,79.5,79.2,79.5,79.6,79.7,79.7
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,"Egypt, Arab Rep.",EGY,68.391,68.596,68.791,68.974,69.144,69.302,69.453,69.599,69.742
