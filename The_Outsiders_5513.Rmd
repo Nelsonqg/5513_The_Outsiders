@@ -223,6 +223,48 @@ fig
 
 Figure \@ref(fig:Basicdeving) shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
 
+Intermediate Education
+
+```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+intermediate_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, `Unemployment with intermediate education, male (% of male labor force with intermediate education)`)%>%
+
+   rename (Female = `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, Male = `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Intermediate_M_F", values_to = "Percentage")
+
+t <- ggplot(intermediate_education_developed, aes(x = Year, y = Percentage, fill = Intermediate_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(t)
+
+fig
+```
+
+Figure \@ref(fig:Intermediatedeved) shows the unemployment percentage of males and females with intermediate education in developed countries like United states and France.
+
+```{r Intermediatedeving, fig.cap = "Unemployment with intermediate education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+intermediate_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+     rename (Female = `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, Male = `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Intermediate_M_F", values_to = "Percentage")
+
+u <- ggplot(intermediate_education_developing, aes(x = Year, y = Percentage, fill = Intermediate_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(u)
+
+fig
+```
+
+Figure \@ref(fig:Intermediatedeving) shows the unemployment percentage of males and females with intermediate education in developing countries like Colombia and Egypt.
+
 
 # Conclusion
 
