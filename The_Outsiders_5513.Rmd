@@ -87,6 +87,37 @@ countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
 
 ```
 
+## Analysis on total unemployed males and females in developed and developing countries
+
+**United States & France**
+
+```{r tabref, echo= FALSE,  warning=FALSE, message=FALSE}
+
+developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment, female (% of female labor force) (national estimate)`, `Unemployment, male (% of male labor force) (national estimate)` ) %>%
+  group_by(`Country Name`, Year)%>%
+  summarise(Unemployed_F = sum(`Unemployment, female (% of female labor force) (national estimate)`), Unemployed_M = sum(`Unemployment, male (% of male labor force) (national estimate)`))
+
+ knitr::kable(developed, caption = "Unemployed percentage of males and females in Developed countries")%>%
+  kable_classic_2(c("striped", "hover"), full_width = F)%>%
+   row_spec(14, bold = T, color = "white", background = "red")
+```
+
+**Colombia & Egypt, Arab Rep.**
+
+```{r tabref1, echo=FALSE, warning=FALSE, message=FALSE}
+developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment, female (% of female labor force) (national estimate)`, `Unemployment, male (% of male labor force) (national estimate)` ) %>%
+  group_by(`Country Name`, Year)%>%
+  summarise(Unemployed_F = sum(`Unemployment, female (% of female labor force) (national estimate)`), Unemployed_M = sum(`Unemployment, male (% of male labor force) (national estimate)`))
+
+  knitr::kable(developing, caption = "Unemployed percentage of males and females in Developing countries")%>%
+  kable_classic_2(c("striped", "hover"), full_width = F)%>%
+     row_spec(14, bold = T, color = "white", background = "red")
+```
+
 
 # Conclusion
 
