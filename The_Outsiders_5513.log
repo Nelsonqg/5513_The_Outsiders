@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.22)  23 MAY 2021 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.22)  23 MAY 2021 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,7 +1184,7 @@ LaTeX Info: Redefining \nameref on input line 145.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count345
-<Figures/logo.jpg, id=47, 736.7525pt x 447.6725pt>
+<Figures/logo.jpg, id=51, 736.7525pt x 447.6725pt>
 File: Figures/logo.jpg Graphic file (type jpg)
 <use Figures/logo.jpg>
 Package pdftex.def Info: Figures/logo.jpg  used on input line 146.
@@ -1257,25 +1257,25 @@ File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 294.
 [3]
-<The_Outsiders_5513_files/figure-latex/A1-1.pdf, id=74, 469.755pt x 325.215pt>
+<The_Outsiders_5513_files/figure-latex/A1-1.pdf, id=79, 469.755pt x 325.215pt>
 File: The_Outsiders_5513_files/figure-latex/A1-1.pdf Graphic file (type pdf)
 <use The_Outsiders_5513_files/figure-latex/A1-1.pdf>
 Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-1.pdf  used o
 n input line 330.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<The_Outsiders_5513_files/figure-latex/A1-2.pdf, id=75, 469.755pt x 325.215pt>
+<The_Outsiders_5513_files/figure-latex/A1-2.pdf, id=80, 469.755pt x 325.215pt>
 File: The_Outsiders_5513_files/figure-latex/A1-2.pdf Graphic file (type pdf)
 <use The_Outsiders_5513_files/figure-latex/A1-2.pdf>
 Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-2.pdf  used o
 n input line 341.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<The_Outsiders_5513_files/figure-latex/A1-3.pdf, id=76, 469.755pt x 325.215pt>
+<The_Outsiders_5513_files/figure-latex/A1-3.pdf, id=81, 469.755pt x 325.215pt>
 File: The_Outsiders_5513_files/figure-latex/A1-3.pdf Graphic file (type pdf)
 <use The_Outsiders_5513_files/figure-latex/A1-3.pdf>
 Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-3.pdf  used o
 n input line 352.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<The_Outsiders_5513_files/figure-latex/A1-4.pdf, id=77, 469.755pt x 325.215pt>
+<The_Outsiders_5513_files/figure-latex/A1-4.pdf, id=82, 469.755pt x 325.215pt>
 File: The_Outsiders_5513_files/figure-latex/A1-4.pdf Graphic file (type pdf)
 <use The_Outsiders_5513_files/figure-latex/A1-4.pdf>
 Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-4.pdf  used o
@@ -1317,29 +1317,38 @@ d, duplicate ignored
                                                   
 l.368 
        <./The_Outsiders_5513_files/figure-latex/A1-3.pdf>] [7 <./The_Outsiders_
-5513_files/figure-latex/A1-4.pdf>] [8pdfTeX warning (ext4): destination with th
-e same identifier (name{table.1}) has been already used, duplicate ignored
+5513_files/figure-latex/A1-4.pdf>]
+<The_Outsiders_5513_files/figure-latex/A3-1.pdf, id=128, 469.755pt x 325.215pt>
+
+File: The_Outsiders_5513_files/figure-latex/A3-1.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A3-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A3-1.pdf  used o
+n input line 439.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[8pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.415 \clearpage
-                ] [9
+l.441 F
+       igure@ref(fig:A3) shows the lines for female labour force and the male] 
+[9 <./The_Outsiders_5513_files/figure-latex/A3-1.pdf>] [10
 
 ]
 No file The_Outsiders_5513.bbl.
-[10
+[11
 
 ] (./The_Outsiders_5513.aux)
 Package rerunfilecheck Info: File `The_Outsiders_5513.out' has not changed.
-(rerunfilecheck)             Checksum: 422FCCABF3554DB8D5EC7D2B98351FE8;93.
+(rerunfilecheck)             Checksum: 41CDB0C5677453FF1DCF751554758295;333.
  ) 
 Here is how much of TeX's memory you used:
- 32190 strings out of 480796
- 614904 string characters out of 5903434
- 966019 words of memory out of 5000000
- 48882 multiletter control sequences out of 15000+600000
- 452657 words of font info for 99 fonts, out of 8000000 for 9000
+ 32206 strings out of 480796
+ 615396 string characters out of 5903434
+ 966086 words of memory out of 5000000
+ 48890 multiletter control sequences out of 15000+600000
+ 452823 words of font info for 101 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,11n,99p,742b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 90i,12n,99p,742b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/janicehsinhsu/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 }{/Users/janicehsinhsu/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 }</Users/janicehsinhsu/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.
@@ -1351,10 +1360,10 @@ m/lmro10.pfb></Users/janicehsinhsu/Library/TinyTeX/texmf-dist/fonts/type1/publi
 c/lm/lmtk10.pfb></Users/janicehsinhsu/Library/TinyTeX/texmf-dist/fonts/type1/pu
 blic/lm/lmtt10.pfb></Users/janicehsinhsu/Library/TinyTeX/texmf-dist/fonts/type1
 /public/lm/lmtti10.pfb>
-Output written on The_Outsiders_5513.pdf (10 pages, 274084 bytes).
+Output written on The_Outsiders_5513.pdf (11 pages, 285172 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 26814 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 26827 words of extra memory for PDF output out of 29859 (max. 10000000)
 

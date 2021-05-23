@@ -142,6 +142,25 @@ t1
 
 Table \@ref(tab:A2) shows the 2015 inflation rate. 
 
+## Gender distribution for labour force
+
+Moreover, the labour force in each country is increasing but decreasing in France. We will take a deeper look in the employment and unemployment in the following sections and try to conclude why the labour force for France is decreasing. 
+
+Let's also look at the gender distribution in the labour force.
+
+```{r A3}
+analysis %>%
+  ggplot(aes(x = Year))+
+  geom_line(aes(y = Population_ages_15_64_female), color = "red")+
+  geom_line(aes(y = Population_ages_15_64_male), color = "green")+
+  ylab("Gender distribution for labour force")+
+  scale_x_continuous(breaks = c(2011:2019))+
+  theme_light()+
+  facet_wrap(~`Country Name`)
+```
+
+Figure\@ref(fig:A3) shows the lines for female labour force and the male labour force are almost overlapped with each other, meaning the gender distribution for labour force is fairly equal in these countries.
+
 
 \clearpage
 \section*{2}
