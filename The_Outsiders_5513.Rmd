@@ -185,7 +185,224 @@ Figure\@ref(fig:A4) shows the life expectancy for female is obviously higher tha
 \clearpage
 \section*{3}
 
-#3 Ratul
+```{r echo= FALSE, warning=FALSE, message=FALSE}
+
+# Libraries
+library(tidyverse)
+library(ggplot2)
+library(readr)
+library(broom)
+library(stringr)
+library(patchwork)
+library(kableExtra)
+library(knitr)
+library(bookdown)
+library(plotly)
+library(dplyr)
+library(tidyr)
+
+Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
+    select(-c('Series Code','Country Code')) %>%
+  rename('2011' = '2011 [YR2011]',
+         '2012' = '2012 [YR2012]', 
+         '2013' = '2013 [YR2013]', 
+         '2014' = '2014 [YR2014]', 
+         '2015' = '2015 [YR2015]', 
+         '2016' = '2016 [YR2016]', 
+         '2017' = '2017 [YR2017]', 
+         '2018' = '2018 [YR2018]', 
+         '2019' = '2019 [YR2019]')
+
+Gender_statistics <- Genderstatistics %>% 
+  filter(str_sub(`Series Name`, 1,12) == "Unemployment")%>%
+ mutate(`2019`= as.numeric(`2019`))%>%
+  pivot_longer(cols = -c(`Country Name`,`Series Name`),
+names_to = "Year",
+values_to = "count") %>% pivot_wider(names_from = "Series Name",
+values_from = "count")
+
+countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
+
+```
+
+## Analysis on total unemployed males and females in developed and developing countries
+
+**United States & France**
+
+```{r tabref, echo= FALSE,  warning=FALSE, message=FALSE}
+
+developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment, female (% of female labor force) (national estimate)`, `Unemployment, male (% of male labor force) (national estimate)` ) %>%
+  group_by(`Country Name`, Year)%>%
+  summarise(Unemployed_F = sum(`Unemployment, female (% of female labor force) (national estimate)`), Unemployed_M = sum(`Unemployment, male (% of male labor force) (national estimate)`))
+
+ knitr::kable(developed, caption = "Unemployed percentage of males and females in Developed countries")%>%
+  kable_classic_2(c("striped", "hover"), full_width = F)%>%
+   row_spec(14, bold = T, color = "white", background = "red")
+```
+
+**Colombia & Egypt, Arab Rep.**
+
+```{r tabref1, echo=FALSE, warning=FALSE, message=FALSE}
+developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment, female (% of female labor force) (national estimate)`, `Unemployment, male (% of male labor force) (national estimate)` ) %>%
+  group_by(`Country Name`, Year)%>%
+  summarise(Unemployed_F = sum(`Unemployment, female (% of female labor force) (national estimate)`), Unemployed_M = sum(`Unemployment, male (% of male labor force) (national estimate)`))
+
+  knitr::kable(developing, caption = "Unemployed percentage of males and females in Developing countries")%>%
+  kable_classic_2(c("striped", "hover"), full_width = F)%>%
+     row_spec(14, bold = T, color = "white", background = "red")
+```
+
+From table \@ref(tab:tabref) and table \@ref(tab:tabref1) we can summarize that clearly the percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt. 
+
+The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt,the employment rate is more for men than women.[@social]
+
+Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab:tabref1) was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@Education].
+
+##  Analysis on unemployed males and females on the bases of qualifications
+
+Advance Education
+
+```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+
+library(webshot)
+webshot::install_phantomjs()
+```
+
+```{r Advancedeved, fig.cap = "Unemployment with advanced education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+Advance_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with advanced education, female (% of female labor force with advanced education)`, `Unemployment with advanced education, male (% of male labor force with advanced education)`)%>%
+  rename (Female = `Unemployment with advanced education, female (% of female labor force with advanced education)`,
+          Male = `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Advance_M_F", values_to = "Percentage")
+
+p <- ggplot(Advance_education_developed, aes(x = Year, y = Percentage, fill = Advance_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(p)
+
+fig
+```
+
+Figure \@ref(fig:Advancedeved) shows the unemployment percentage of males and females with advanced education in developed countries like United states and France.
+
+```{r Advancedeving, fig.cap = "Unemployment with advanced education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+Advance_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with advanced education, female (% of female labor force with advanced education)`, `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  rename (Female = `Unemployment with advanced education, female (% of female labor force with advanced education)`,
+          Male = `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Advance_M_F", values_to = "Percentage")
+
+
+q <- ggplot(Advance_education_developing, aes(x = Year, y = Percentage, fill = Advance_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(q)
+
+fig
+```
+
+Figure \@ref(fig:Advancedeving) shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
+
+Basic Education
+
+```{r Basicdeved, fig.cap = "Unemployment with basic education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+basic_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with basic education, female (% of female labor force with basic education)`, `Unemployment with basic education, male (% of male labor force with basic education)`)%>%
+
+  rename (Female = `Unemployment with basic education, female (% of female labor force with basic education)`,
+          Male = `Unemployment with basic education, male (% of male labor force with basic education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Basic_M_F", values_to = "Percentage")
+
+r <- ggplot(basic_education_developed, aes(x = Year, y = Percentage, fill = Basic_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(r)
+
+fig
+
+```
+
+Figure \@ref(fig:Basicdeved) shows the unemployment percentage of males and females with basic education in developed countries like United states and France.
+
+```{r Basicdeving, fig.cap = "Unemployment with basic education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+basic_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with basic education, female (% of female labor force with basic education)`, `Unemployment with basic education, male (% of male labor force with basic education)`)%>%
+
+
+  rename (Female = `Unemployment with basic education, female (% of female labor force with basic education)`,
+          Male = `Unemployment with basic education, male (% of male labor force with basic education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Basic_M_F", values_to = "Percentage")
+
+s <- ggplot(basic_education_developing, aes(x = Year, y = Percentage, fill = Basic_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(s)
+
+fig
+
+```
+
+Figure \@ref(fig:Basicdeving) shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
+
+Intermediate Education
+
+```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+intermediate_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, `Unemployment with intermediate education, male (% of male labor force with intermediate education)`)%>%
+
+   rename (Female = `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, Male = `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Intermediate_M_F", values_to = "Percentage")
+
+t <- ggplot(intermediate_education_developed, aes(x = Year, y = Percentage, fill = Intermediate_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(t)
+
+fig
+```
+
+Figure \@ref(fig:Intermediatedeved) shows the unemployment percentage of males and females with intermediate education in developed countries like United states and France.
+
+```{r Intermediatedeving, fig.cap = "Unemployment with intermediate education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+intermediate_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+     rename (Female = `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, Male = `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Intermediate_M_F", values_to = "Percentage")
+
+u <- ggplot(intermediate_education_developing, aes(x = Year, y = Percentage, fill = Intermediate_M_F)) +
+  geom_bar(stat='identity', position = "dodge") + facet_wrap(~`Country Name`)
+
+fig <- ggplotly(u)
+
+fig
+```
+
+Figure \@ref(fig:Intermediatedeving) shows the unemployment percentage of males and females with intermediate education in developing countries like Colombia and Egypt.
+
 
 # Conclusion
 
