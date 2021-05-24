@@ -3,7 +3,7 @@ title: "Analysis on Gender Statictics"
 author: "Hsu, Quintero, Wadhwa"
 output:
   pdf_document:
-    citation_package: natbib
+    citation_package: biblatex
     highlight: tango
     number_sections: yes
     toc: yes
@@ -13,7 +13,7 @@ output:
     toc: yes
     toc_depth: '2'
 bibliography: references.bib 
-biblio-style: dinat
+biblio-style: authoryear-comp
 subtitle: "Team 6- The Outsiders"
 header-includes:
 - \usepackage{titling}
@@ -31,12 +31,16 @@ header-includes:
 - \pagestyle{fancy}
 ---
 
+# Introduction
+
+\clearpage
+
+
+# Analysis 
 
 \section*{1}
 
-#1 Janice
-
-```{r}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 # Libraries
 library(tidyverse)
 library(ggplot2)
@@ -63,7 +67,7 @@ Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
   mutate(`2019` = as.numeric(`2019`)) 
 ```
 
-```{r}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 analysis<- Genderstatistics %>%
   filter(`Series Name` %in% c("Inflation, consumer prices (annual %)", "Population ages 15-64, female", "Population ages 15-64, male", "Life expectancy at birth, female (years)","Life expectancy at birth, male (years)")) %>%
   select(-c(`Series Code`,`Country Code`)) %>%
@@ -74,7 +78,7 @@ analysis<- Genderstatistics %>%
               values_from = "count") 
 ```
 
-```{r}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 analysis <- analysis %>%
 mutate(Inflation = as.numeric(`Inflation, consumer prices (annual %)`)) %>%
   mutate(Population_ages_15_64_female = as.numeric(`Population ages 15-64, female`)) %>%
@@ -88,7 +92,7 @@ mutate(Inflation = as.numeric(`Inflation, consumer prices (annual %)`)) %>%
 
 ## Inflation
 
-```{r A1, fig.cap = "Inflation vs Labour force" }
+```{r A1, fig.cap = "Inflation vs Labour force" , echo=FALSE, warning=FALSE, message=FALSE }
 library(purrr)
 library(ggplot2)
 library(patchwork)
@@ -128,7 +132,7 @@ Moreover, low inflation rate does not mean the currency is more valuable. On the
 
 Additionally, developed countries usually have more stable inflation rate than developing countries. This is to keep the economy and the currency stable.
 
-```{r A2}
+```{r A2, echo=FALSE, warning=FALSE, message=FALSE}
 library(kableExtra)
 t1 <- analysis %>%
   select(`Country Name`,Year,Inflation,labour_force) %>%
@@ -149,7 +153,7 @@ Moreover, the labour force in each country is increasing but decreasing in Franc
 
 Let's also look at the gender distribution in the labour force.
 
-```{r A3}
+```{r A3, echo=FALSE, warning=FALSE, message=FALSE}
 analysis %>%
   ggplot(aes(x = Year))+
   geom_line(aes(y = Population_ages_15_64_female), color = "red")+
@@ -164,7 +168,7 @@ Figure\@ref(fig:A3) shows the lines for female labour force and the male labour 
 
 ## Life expectancy for female and male at birth
 
-```{r A4}
+```{r A4, echo=FALSE, warning=FALSE, message=FALSE}
 analysis %>%
   ggplot(aes(x = Year))+
   geom_line(aes(y = Life_expectancy_at_birth_female), color = "red")+
@@ -177,19 +181,18 @@ analysis %>%
 Figure\@ref(fig:A4) shows the life expectancy for female is obviously higher than male. More interestingly, US and France are having a stable life expectancy from 2011 til 2019, while in Egypt and Colombia, the life expectancy for both genders is increasing.
 
 \clearpage
+
 \section*{2}
 
 
-
-```{r readingdata, message=FALSE}
-
+```{r readingdata, message=FALSE, echo=FALSE, warning=FALSE}
 
 readingdata <- read_csv("data/088121e0-ea83-4b15-be2a-1bcc36ea893f_Data.csv")
 
 ```
 
 
-```{r cleaningdata, fig.width=10,fig.height=9, fig.width=12}
+```{r cleaningdata, fig.width=10,fig.height=9, fig.width=12, echo=FALSE, warning=FALSE, message=FALSE}
 
 byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`:`2019 [YR2019]`)) %>% 
   filter(`Series Name` %in%  c("Employment in agriculture, female (% of female employment) (modeled ILO estimate)",
@@ -232,8 +235,7 @@ The core analysis of this report is to analyze the different workforce distribut
 
 Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries. 
 
-### High Income Countries Workforce
-
+## High Income Countries Workforce
 
 The higher income countries have, the higher participation in services by males. On the other hand, there is lower concentration in the participation of female in industries that are considered "Masculine" for the time being, agriculture and industry. 
 
@@ -242,7 +244,7 @@ For high income countries the similarity in the allocation of workforce among th
 Generally, females are on top of the chart with about 90% working in services, and with similar rates for agriculture and industry of 1% and 9% respectively. 
 
 
-```{r highinc, fig.width=12,fig.height=6}
+```{r highinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
 
 usafraemp <- byyear %>% 
   filter(`Country Name` %in% c("United States",
@@ -269,14 +271,14 @@ usafraemp
 ```
 
 
-### Low Income Countries Workforce
+## Low Income Countries Workforce
 
 
 Males in the job market for low income countries keep similar trends for the jobs in agriculture. In 2019, in Colombia and Egypt got in average 25% of male participation. In industry, Colombia and Egypt have a notorious difference of 25% and 32% respectively. 
 
 In the case of females, they keep an average from 10% to 20% in "Masculine" jobs, as per in services, they keep from 50% to 80%. Egypt had a huge decline in the agricultural jobs for females from a 43% to 21%. It is remarkable this variation along the previous 9 years as well as that the  woman workforce seemed to move in the same rate to the services industry as seen in the figure \@ref(fig:lowinc) below.
 
-```{r lowinc, fig.width=12,fig.height=6}
+```{r lowinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
 
 colegyemp <- byyear %>% 
   filter(`Country Name` %in% c("Colombia",
@@ -303,7 +305,6 @@ colegyemp
 ```
 
 
-
 ## Gender Workforce Distribution by Country 
 
 
@@ -311,7 +312,7 @@ As seen in the current analysis the economical capacity of the countries can inf
 
 Similarly, males have the highest level of employment in services, but they keep leading the industry and agricultural workforce. It is noticeable that if a country is wealthy, there is a higher level of participation of females in service jobs compared to low income countries. On the other hand, despite the income level of the country males keep the same percentage among the countries. See figure \@ref(fig:allcountries).
 
-```{r allcountries, fig.width=15}
+```{r allcountries, fig.width=15, echo=FALSE, warning=FALSE, message=FALSE}
 
 byyear %>% ggplot(aes(x = `Year`,
                 y = `Percentage`, 
@@ -332,21 +333,16 @@ byyear %>% ggplot(aes(x = `Year`,
 ```
 
 
-
-
 ## Gender Workforce Comparison by Industry.
 
 From other point of view and analyzing the variables across all the countries it can be seen that the genders maintain a similar level of employment according to the selected industries.
 
-
-
-### Female and Male Employment in Agriculture.
+## Female and Male Employment in Agriculture.
 
 in the figure \@ref(fig:agriculture) women keep the lowest participation in agriculture and industry jobs in the selected countries except Egypt which have had a decrease around of 50% during the past 9 years, keeping lowest rates compared to male results. The level of jobs have been steady for males and females during the analyzed years. 
 
 
-
-```{r agriculture, fig.width=10, fig.height=5}
+```{r agriculture, fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
 byyear %>% 
   filter(`Series Name` %in% c("Males in Agriculture (%)",
                               "Females in Agriculture (%)"), 
@@ -374,15 +370,13 @@ byyear %>%
 ```
 
 
-
-### Female and Male Employment in Industry.
-
+## Female and Male Employment in Industry.
 
 In the case of industry jobs, male keep a highest rate compared to female across the analyzed countries. In 2019 the number of female rose by 5% in Egypt, while in Colombia decreased by 2% and in USA and France maintained the same levels.
 
 In the case of males, all the countries maintained about the same levels since 2011 as seen in the figure \@ref(fig:industry).
 
-```{r industry, fig.width=10, fig.height=5}
+```{r industry, fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
 byyear %>% 
   filter(`Series Name` %in% c("Males in Industry (%)",
                               "Females in Industry (%)"), 
@@ -410,9 +404,7 @@ byyear %>%
 ```
 
 
-
-
-### Female and Male Employment in Services.
+## Female and Male Employment in Services.
 
 
 Female have a highest participation in the services sector compared to males and across all the industries.
@@ -420,7 +412,7 @@ Female have a highest participation in the services sector compared to males and
 In general, all the countries kept the same average levels since 2011 and they are in a similar range despite the income level of the country. But, Egypt has an interesting variation of the the jobs allocation. In this case, females in services have rose over 30% in the last years, maintaining the leading over their male peers. In this Industry Egypt has the lowest of people, but the trend keeps a future positive path as well as France. See figure \@ref(fig:services).
 
 
-```{r services, fig.width=10, fig.height=5}
+```{r services, fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
 byyear %>% 
   filter(`Series Name` %in% c("Males in Services (%)",
                               "Females in Services (%)"), 
@@ -449,14 +441,14 @@ byyear %>%
 
 
 
-### Gender Workforce by Industry
+## Gender Workforce by Industry
 
 
 In summary, females across all countries have lower levels than male occupations in agriculture and industry. On the other hand females have the lead in the services job market, the most notorious case of growth in this industry was Egypt that in 2019 the percentage of females in this industry was 71%.
 
 
 
-```{r allvars, fig.width=15, fig.height=15}
+```{r allvars, fig.width=15, fig.height=15, echo=FALSE, warning=FALSE, message=FALSE}
 
 byyear %>% ggplot(aes(x = `Year`,
                 y = `Percentage`, 
@@ -484,10 +476,8 @@ byyear %>% ggplot(aes(x = `Year`,
 ```
 
 
-
-
-
 \clearpage
+
 \section*{3}
 
 ```{r echo= FALSE, warning=FALSE, message=FALSE}
@@ -569,7 +559,7 @@ Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab
 
 ##  Analysis on unemployed males and females on the bases of qualifications
 
-Advance Education
+**Advance Education**
 
 ```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -619,7 +609,7 @@ fig
 
 Figure \@ref(fig:Advancedeving) shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
 
-Basic Education
+**Basic Education**
 
 ```{r Basicdeved, fig.cap = "Unemployment with basic education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -666,7 +656,7 @@ fig
 
 Figure \@ref(fig:Basicdeving) shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
 
-Intermediate Education
+**Intermediate Education**
 
 ```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -708,11 +698,12 @@ fig
 
 Figure \@ref(fig:Intermediatedeving) shows the unemployment percentage of males and females with intermediate education in developing countries like Colombia and Egypt.
 
+\clearpage
 
 # Conclusion
 
 
-
+\clearpage
 
 
 
