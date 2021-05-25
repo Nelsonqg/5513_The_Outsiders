@@ -2,8 +2,8 @@
 title: "Presentation for Country Fire Condition"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: rows
-    vertical_layout: fill
+    orientation: 
+    vertical_layout: fill 
     source_code: embed
 ---
 
@@ -18,28 +18,694 @@ library(dplyr)
 library(ggplot2)
 library(kableExtra)
 library(tibble)
+library(htmltools)
+
 ```
 
 
-The Most Frequent Fire Incident in Victoria
-=================================================================================
-Row
----------------------------------------------------------------------------------
-### The Most Frequent Fire Incident in Victoria (July 2015 to June 2016)
-
-The Volunteer Structure For 2016
+Inflation effects in Countries {data-icon="ion-arrow-graph-up-right"}
 =================================================================================
 
-Column {data-width=650}
+Column {.sidebar data-width=250}
+-------------------------------------
+
+** Developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. The global economy has not recovered from the GFC yet.
+
+** Low inflation rate does not mean the currency is more valuable. On the contrary, it signals demand for goods and services is lower than expected and will then result in recession and the an increase in unemployment.
+
+**Developed countries usually have more stable inflation rate than developing countries. This is to keep the economy and the currency stable
+
+
+
+Column {.tabset data-width=70%} 
 ---------------------------------------------------------------------------------
 
-### Statewide Age Distribution
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# Libraries
+library(tidyverse)
+library(ggplot2)
+library(readr)
+library(broom)
+library(stringr)
+library(patchwork)
+library(kableExtra)
+library(knitr)
+library(bookdown)
+library(naniar)
+library(GGally)
+
+Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
+  rename('2011' = '2011 [YR2011]',
+         '2012' = '2012 [YR2012]', 
+         '2013' = '2013 [YR2013]', 
+         '2014' = '2014 [YR2014]', 
+         '2015' = '2015 [YR2015]', 
+         '2016' = '2016 [YR2016]', 
+         '2017' = '2017 [YR2017]', 
+         '2018' = '2018 [YR2018]', 
+         '2019' = '2019 [YR2019]') %>%
+  mutate(`2019` = as.numeric(`2019`)) 
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+analysis<- Genderstatistics %>%
+  filter(`Series Name` %in% c("Inflation, consumer prices (annual %)", "Population ages 15-64, female", "Population ages 15-64, male", "Life expectancy at birth, female (years)","Life expectancy at birth, male (years)")) %>%
+  select(-c(`Series Code`,`Country Code`)) %>%
+   pivot_longer(cols = -c(`Country Name`,`Series Name`),
+               names_to = "Year",
+               values_to = "count") %>%
+  pivot_wider(names_from = "Series Name",
+              values_from = "count") 
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+analysis <- analysis %>%
+mutate(Inflation = as.numeric(`Inflation, consumer prices (annual %)`)) %>%
+  mutate(Population_ages_15_64_female = as.numeric(`Population ages 15-64, female`)) %>%
+  mutate(Population_ages_15_64_male = as.numeric(`Population ages 15-64, male`)) %>%
+  mutate(labour_force = `Population_ages_15_64_female`+`Population_ages_15_64_male`) %>%
+  mutate(Year = as.numeric(Year)) %>%
+  mutate(Life_expectancy_at_birth_female = as.numeric(`Life expectancy at birth, female (years)`))%>%
+  mutate(Life_expectancy_at_birth_male = as.numeric(`Life expectancy at birth, male (years)`))%>%
+  select(-c(`Inflation, consumer prices (annual %)`,`Population ages 15-64, female`,`Population ages 15-64, male`, `Life expectancy at birth, female (years)`, `Life expectancy at birth, male (years)`))
+```
 
 
-### Statewide Serve Year Situation 
+```{r A1, fig.cap = "Inflation vs Labour force" , echo=FALSE, warning=FALSE, message=FALSE, fig.height=4}
+library(purrr)
+library(ggplot2)
+library(patchwork)
+countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
+
+infla_labour <- function(country){
+  p1 <- analysis %>%
+  filter(`Country Name`== country)%>%
+    na.omit()%>%
+    ggplot(aes(x=Year, y=Inflation)) +
+  geom_line(color="#69b3a2", size=2) +
+  scale_x_continuous(breaks = c(2011:2019))+
+    scale_y_continuous(labels = scales::comma)+
+  ggtitle("Inflation rate") +
+    labs(title = country)
+  
+   p2 <- analysis %>%
+  filter(`Country Name`== country)%>%
+     na.omit()%>%
+ggplot(aes(x=Year, y=labour_force)) +
+  geom_line(color="grey",size=2) +
+  scale_x_continuous(breaks = c(2011:2019))+
+     scale_y_continuous(labels = scales::comma)+
+  ggtitle("number of labour force") +
+     labs(title = country)
+
+p1 + p2
+}
+```
+
+
+### Colombia
+
+
+```{r}
+infla_labour("Colombia")
+```
+
+### Egypt
+
+```{r}
+
+infla_labour("Egypt, Arab Rep.")
+```
+
+
+### United States
+
+```{r , fig.cap = "Inflation vs Labour force" , echo=FALSE, warning=FALSE, message=FALSE, fig.height=4}
+infla_labour("United States")
+
+```
+
+### France
+
+```{r}
+infla_labour("France")
+
+```
 
 
 
-Column {data-width=350}
+
+
+
+
+
+
+
+
+
+Column {data-width=30%}
+-----------------------------------------------------------------------
+
+
+```{r A2, echo=FALSE, warning=FALSE, message=FALSE}
+library(kableExtra)
+t1 <- analysis %>%
+  select(`Country Name`,Year,Inflation,labour_force) %>%
+  filter(Year == "2015") %>%
+   knitr::kable(
+    caption = "Inflation and the labour force in 2015"
+  ) %>%
+  kable_styling(c("hover", "striped"), full_width = FALSE, font_size = 20)
+
+t1
+```
+
+
+
+Gender Distribution in Labour Force {data-icon="ion-ios-color-filter"}
+=================================================================================
+
+Row {.tabset}
 ---------------------------------------------------------------------------------
+
+### Gender Distribution in Labour Force
+```{r A3, echo=FALSE, warning=FALSE, message=FALSE}
+analysis %>%
+  ggplot(aes(x = Year))+
+  geom_line(aes(y = Population_ages_15_64_female), color = "red")+
+  geom_line(aes(y = Population_ages_15_64_male), color = "green")+
+  ylab("Gender distribution for labour force")+
+  scale_x_continuous(breaks = c(2011:2019))+
+  theme_light()+
+  facet_wrap(~`Country Name`)
+```
+
+
+
+
+### Life Expectancy for Female and Male at Birth
+
+```{r A4, echo=FALSE, warning=FALSE, message=FALSE, fig.pos="Center"}
+analysis %>%
+  ggplot(aes(x = Year))+
+  geom_line(aes(y = Life_expectancy_at_birth_female), color = "red")+
+  geom_line(aes(y = Life_expectancy_at_birth_male), color = "green")+
+  ylab("Life expectancy for female and male")+
+  scale_x_continuous(breaks = c(2011:2019))+
+  facet_wrap(~`Country Name`)+
+  theme_light()
+```
+
+The life expectancy for female is obviously higher than male. More interestingly, US and France are having a stable life expectancy from 2011 til 2019, while in Egypt and Colombia, the life expectancy for both genders is increasing.
+
+
+Employment Analysis by Country and Income {data-icon="ion-android-globe"}
+=================================================================================
+
+```{r readingdata, message=FALSE, echo=FALSE, warning=FALSE}
+
+readingdata <- read_csv("data/088121e0-ea83-4b15-be2a-1bcc36ea893f_Data.csv")
+
+```
+
+
+```{r cleaningdata, fig.width=10,fig.height=9, fig.width=12, echo=FALSE, warning=FALSE, message=FALSE}
+
+byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`:`2019 [YR2019]`)) %>% 
+  filter(`Series Name` %in%  c("Employment in agriculture, female (% of female employment) (modeled ILO estimate)",
+                               "Employment in agriculture, male (% of male employment) (modeled ILO estimate)",
+                               "Employment in industry, female (% of female employment) (modeled ILO estimate)",
+                               "Employment in industry, male (% of male employment) (modeled ILO estimate)",
+                               "Employment in services, female (% of female employment) (modeled ILO estimate)",
+                               "Employment in services, male (% of male employment) (modeled ILO estimate)")) %>% 
+  mutate(`Series Name` = case_when(`Series Name` == "Employment in agriculture, female (% of female employment) (modeled ILO estimate)" ~ "Females in Agriculture (%)",
+                                   `Series Name` == "Employment in agriculture, male (% of male employment) (modeled ILO estimate)" ~ "Males in Agriculture (%)",
+                                   `Series Name` == "Employment in industry, female (% of female employment) (modeled ILO estimate)" ~ "Females in Industry (%)",
+                                   `Series Name` == "Employment in industry, male (% of male employment) (modeled ILO estimate)" ~ "Males in Industry (%)",
+                                   `Series Name` == "Employment in services, female (% of female employment) (modeled ILO estimate)" ~ "Females in Services (%)",
+                                   `Series Name` == "Employment in services, male (% of male employment) (modeled ILO estimate)" ~ "Males in Services (%)"),
+         `Country Name` = case_when(`Country Name` == "Egypt, Arab Rep." ~ "Egypt",
+                                    TRUE~`Country Name`),
+                                   "2011" = as.double(`2011 [YR2011]`),
+                                   "2012" = as.double(`2012 [YR2012]`),
+                                   "2013" = as.double(`2013 [YR2013]`),
+                                   "2014" = as.double(`2014 [YR2014]`),
+                                   "2015" = as.double(`2015 [YR2015]`),
+                                   "2016" = as.double(`2016 [YR2016]`), 
+                                   "2017" = as.double(`2017 [YR2017]`), 
+                                   "2018" = as.double(`2018 [YR2018]`), 
+                                   "2019" = as.double(`2019 [YR2019]`)) %>% 
+  filter(`Country Name` %in% c("United States", "Egypt","Colombia", "France")) %>% 
+  select(`Series Name`, 
+         `Country Name`, 
+         `2011`:`2019`) %>% 
+  pivot_longer(names_to = "Year", 
+               values_to = "Percentage", 
+               cols =  c(-`Series Name`,
+                         -`Country Name`))
+```
+
+
+Column {.sidebar data-width=250}
+-------------------------------------
+```{r}
+
+
+HTML("<p>The core analysis of this report is to analyze the different workforce distribution among high and low income countries and the gender distribution inside them. High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
+
+Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries.</p></br>")
+
+```
+
+
+Column
+-----------------------------------------------------------------------
+
+### High Income Countries
+
+
+```{r highinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
+
+usafraemp <- byyear %>% 
+  filter(`Country Name` %in% c("United States",
+                               "France")) %>% 
+  ggplot(aes(x = `Year`,
+             y = `Percentage`, 
+             group = `Series Name`, 
+             color = `Series Name`))+
+  facet_wrap(~`Country Name`)+
+  geom_point(size = 2.5)+
+  geom_line(aes(linetype=`Series Name` %in%  c("Females in Agriculture (%)", 
+                                               "Females in Industry (%)", 
+                                               "Females in Services (%)")),
+            size= 1.5, 
+            show.legend = F)+
+  theme(legend.position = "bottom")+
+  labs( title = "Gender Workforce in High Income Countries")+
+  scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
+                     breaks = seq(0,100,10), 
+                     limits = c(0,100))
+  
+usafraemp
+
+```
+
+
+
+Column
+----------------------------------------------------------------------- 
+
+### Low Income Countries
+
+
+```{r lowinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
+
+colegyemp <- byyear %>% 
+  filter(`Country Name` %in% c("Colombia",
+                               "Egypt")) %>% 
+  ggplot(aes(x = `Year`,
+             y = `Percentage`, 
+             group = `Series Name`, 
+             color = `Series Name`))+
+  facet_wrap(~`Country Name`)+
+  geom_point(size = 2.5)+
+  geom_line(aes(linetype=`Series Name` %in%  c("Females in Agriculture (%)", 
+                                               "Females in Industry (%)", 
+                                               "Females in Services (%)")),
+            size= 1.5, 
+            show.legend = F)+
+  theme(legend.position = "bottom")+
+  labs( title = "Gender Workforce in High Income Countries")+
+  scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
+                     breaks = seq(0,100,10), 
+                     limits = c(0,100))
+  
+colegyemp
+
+```
+
+
+
+
+
+
+Gender Workforce Comparison by Industry. {data-icon="ion-ios-people"}
+=================================================================================
+
+
+Column {.sidebar data-width=200}
+-------------------------------------
+```{r}
+
+
+HTML("<p>As seen in the current analysis the economical capacity of the countries can infer in the workforce distribution. In a general view of the selected samples, females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.</p></br>")
+```
+
+
+
+Column {column-width=40%}
+-----------------------------------------------------------------------
+
+
+### Gender Workforce by Industry
+
+
+```{r allvars, fig.width=20, fig.height=10, echo=FALSE, warning=FALSE, message=FALSE}
+
+byyear %>% ggplot(aes(x = `Year`,
+                y = `Percentage`, 
+                group = `Country Name`, 
+                color = `Country Name`))+
+  facet_wrap(~fct_relevel(`Series Name`, c("Females in Agriculture (%)", 
+                                          "Females in Services (%)",
+                                           "Females in Industry (%)",
+                                          "Males in Agriculture (%)",
+                                           "Males in Services (%)"
+                                          )), 
+             ncol = 3)+
+  theme(legend.position = "bottom")+
+  scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
+                     breaks = seq(0,100,10), 
+                     limits = c(0,100))+
+  geom_line(aes(linetype=`Series Name` %in%  c("Females in Agriculture (%)",
+                                               "Females in Industry (%)", 
+                                               "Females in Services (%)")),
+            size= 1.5, 
+            show.legend = F,
+            alpha = 0.8)+
+  geom_point(size=2)
+
+
+```
+
+
+
+
+
+Unemployed by Gender and Country {data-icon="ion-android-globe"}
+=================================================================================
+
+Column {.sidebar data-width=200}
+-------------------------------------
+```{r}
+
+HTML("<p>The percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt.
+
+The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt,the employment rate is more for men than women.[@social]
+
+Another interesting observation from table previous tables was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@Education].</p></br>")
+```
+
+
+
+Column {data-height=900}
+---------------------------------------------------------------------------------
+
+```{r echo= FALSE, warning=FALSE, message=FALSE}
+
+# Libraries
+library(tidyverse)
+library(ggplot2)
+library(readr)
+library(broom)
+library(stringr)
+library(patchwork)
+library(kableExtra)
+library(knitr)
+library(bookdown)
+library(plotly)
+library(dplyr)
+library(tidyr)
+
+Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
+    select(-c('Series Code','Country Code')) %>%
+  rename('2011' = '2011 [YR2011]',
+         '2012' = '2012 [YR2012]', 
+         '2013' = '2013 [YR2013]', 
+         '2014' = '2014 [YR2014]', 
+         '2015' = '2015 [YR2015]', 
+         '2016' = '2016 [YR2016]', 
+         '2017' = '2017 [YR2017]', 
+         '2018' = '2018 [YR2018]', 
+         '2019' = '2019 [YR2019]')
+
+Gender_statistics <- Genderstatistics %>% 
+  filter(str_sub(`Series Name`, 1,12) == "Unemployment")%>%
+ mutate(`2019`= as.numeric(`2019`))%>%
+  pivot_longer(cols = -c(`Country Name`,`Series Name`),
+names_to = "Year",
+values_to = "count") %>% pivot_wider(names_from = "Series Name",
+values_from = "count")
+
+countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
+
+```
+
+
+### Analysis on total unemployed males and females in developed countries
+
+**United States & France**
+
+```{r tabref, echo= FALSE,  warning=FALSE, message=FALSE}
+
+developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment, female (% of female labor force) (national estimate)`, `Unemployment, male (% of male labor force) (national estimate)` ) %>%
+  group_by(`Country Name`, Year)%>%
+  summarise(Unemployed_F = sum(`Unemployment, female (% of female labor force) (national estimate)`), Unemployed_M = sum(`Unemployment, male (% of male labor force) (national estimate)`))
+
+ knitr::kable(developed, caption = "Unemployed percentage of males and females in Developed countries")%>%
+  kable_classic_2(c("striped", "hover"), full_width = F, font_size = 25)%>%
+   row_spec(14, bold = T, color = "white", background = "red")
+```
+
+Column {data-height=900}
+---------------------------------------------------------------------------------
+
+### Analysis on total unemployed males and females in developing countries
+
+**Colombia & Egypt**
+
+```{r tabref1, echo=FALSE, warning=FALSE, message=FALSE}
+developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment, female (% of female labor force) (national estimate)`, `Unemployment, male (% of male labor force) (national estimate)` ) %>%
+  group_by(`Country Name`, Year)%>%
+  summarise(Unemployed_F = sum(`Unemployment, female (% of female labor force) (national estimate)`), Unemployed_M = sum(`Unemployment, male (% of male labor force) (national estimate)`))
+
+  knitr::kable(developing, caption = "Unemployed percentage of males and females in Developing countries")%>%
+  kable_classic_2(c("striped", "hover"), full_width = F, font_size = 25)%>%
+     row_spec(14, bold = T, color = "white", background = "red")
+```
+
+
+
+
+Qualifications by Gender {data-icon="ion-ribbon-b"}
+=================================================================================
+
+```{r echo= FALSE, warning=FALSE, message=FALSE}
+
+# Libraries
+library(tidyverse)
+library(ggplot2)
+library(readr)
+library(broom)
+library(stringr)
+library(patchwork)
+library(kableExtra)
+library(knitr)
+library(bookdown)
+library(plotly)
+library(dplyr)
+library(tidyr)
+
+Genderstatistics <- read_csv("Data/Genderstatistics.csv")%>%
+    select(-c('Series Code','Country Code')) %>%
+  rename('2011' = '2011 [YR2011]',
+         '2012' = '2012 [YR2012]', 
+         '2013' = '2013 [YR2013]', 
+         '2014' = '2014 [YR2014]', 
+         '2015' = '2015 [YR2015]', 
+         '2016' = '2016 [YR2016]', 
+         '2017' = '2017 [YR2017]', 
+         '2018' = '2018 [YR2018]', 
+         '2019' = '2019 [YR2019]')
+
+Gender_statistics <- Genderstatistics %>% 
+  filter(str_sub(`Series Name`, 1,12) == "Unemployment")%>%
+ mutate(`2019`= as.numeric(`2019`))%>%
+  pivot_longer(cols = -c(`Country Name`,`Series Name`),
+names_to = "Year",
+values_to = "count") %>% pivot_wider(names_from = "Series Name",
+values_from = "count")
+
+countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
+
+```
+
+Column {.tabset}
+---------------------------------------------------------------------------------
+### Advanced Education
+
+
+
+
+```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+
+library(webshot)
+```
+
+```{r Advancedeved, fig.cap = "Unemployment with advanced education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+Advance_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with advanced education, female (% of female labor force with advanced education)`, `Unemployment with advanced education, male (% of male labor force with advanced education)`)%>%
+  rename (Female = `Unemployment with advanced education, female (% of female labor force with advanced education)`,
+          Male = `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Advance_M_F", values_to = "Percentage")
+
+p <- ggplot(Advance_education_developed, aes(x = Year, y = Percentage, fill = Advance_M_F)) +
+  geom_bar(stat='identity', position = "dodge",show.legend = FALSE) + facet_wrap(~`Country Name`)+
+  scale_y_continuous(limits = c(0,35))
+
+fig <- ggplotly(p)
+
+fig
+```
+
+
+
+
+
+```{r Advancedeving, fig.cap = "Unemployment with advanced education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+Advance_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with advanced education, female (% of female labor force with advanced education)`, `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  rename (Female = `Unemployment with advanced education, female (% of female labor force with advanced education)`,
+          Male = `Unemployment with advanced education, male (% of male labor force with advanced education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Advance_M_F", values_to = "Percentage")
+
+
+q <- ggplot(Advance_education_developing, aes(x = Year, y = Percentage, fill = Advance_M_F)) +
+  geom_bar(stat='identity', position = "dodge",show.legend = FALSE) + facet_wrap(~`Country Name`) +
+  scale_y_continuous(limits = c(0,35))
+
+fig <- ggplotly(q)
+
+fig
+```
+
+
+
+
+### Intermediate Education
+
+
+
+ 
+```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+intermediate_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, `Unemployment with intermediate education, male (% of male labor force with intermediate education)`)%>%
+
+   rename (Female = `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, Male = `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Intermediate_M_F", values_to = "Percentage")
+
+t <- ggplot(intermediate_education_developed, aes(x = Year, y = Percentage, fill = Intermediate_M_F)) +
+  geom_bar(stat='identity', position = "dodge",show.legend = FALSE) + facet_wrap(~`Country Name`)+
+  scale_y_continuous(limits = c(0,35))
+
+fig <- ggplotly(t)
+
+fig
+```
+
+
+
+
+
+```{r Intermediatedeving, fig.cap = "Unemployment with intermediate education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+intermediate_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+     rename (Female = `Unemployment with intermediate education, female (% of female labor force with intermediate education)`, Male = `Unemployment with intermediate education, male (% of male labor force with intermediate education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Intermediate_M_F", values_to = "Percentage")
+
+u <- ggplot(intermediate_education_developing, aes(x = Year, y = Percentage, fill = Intermediate_M_F)) +
+  geom_bar(stat='identity', position = "dodge",show.legend = FALSE) + facet_wrap(~`Country Name`)+
+  scale_y_continuous(limits = c(0,35))
+
+
+fig <- ggplotly(u)
+
+fig
+```
+
+
+
+### Basic Education
+
+
+
+```{r Basicdeved, fig.cap = "Unemployment with basic education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+basic_education_developed <- Gender_statistics%>%
+  filter(`Country Name` %in% c("United States", "France"))%>%
+  select(`Country Name`, Year, `Unemployment with basic education, female (% of female labor force with basic education)`, `Unemployment with basic education, male (% of male labor force with basic education)`)%>%
+
+  rename (Female = `Unemployment with basic education, female (% of female labor force with basic education)`,
+          Male = `Unemployment with basic education, male (% of male labor force with basic education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Basic_M_F", values_to = "Percentage")
+
+r <- ggplot(basic_education_developed, aes(x = Year, y = Percentage, fill = Basic_M_F)) +
+  geom_bar(stat='identity', position = "dodge",show.legend = FALSE) + facet_wrap(~`Country Name`)+
+  scale_y_continuous(limits = c(0,35))
+
+
+fig <- ggplotly(r)
+
+fig
+
+```
+
+
+
+```{r Basicdeving, fig.cap = "Unemployment with basic education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
+
+basic_education_developing <- Gender_statistics%>%
+  filter(`Country Name` %in% c("Colombia", "Egypt, Arab Rep."))%>%
+  select(`Country Name`, Year, `Unemployment with basic education, female (% of female labor force with basic education)`, `Unemployment with basic education, male (% of male labor force with basic education)`)%>%
+
+
+  rename (Female = `Unemployment with basic education, female (% of female labor force with basic education)`,
+          Male = `Unemployment with basic education, male (% of male labor force with basic education)`) %>%
+
+  pivot_longer(cols = c(Female, Male), names_to = "Basic_M_F", values_to = "Percentage")
+
+s <- ggplot(basic_education_developing, aes(x = Year, y = Percentage, fill = Basic_M_F)) +
+  geom_bar(stat='identity', position = "dodge",show.legend = FALSE) + facet_wrap(~`Country Name`)+
+  scale_y_continuous(limits = c(0,35))
+
+
+fig <- ggplotly(s)
+
+fig
+
+```
+
+
+
+
 
