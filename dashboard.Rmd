@@ -22,18 +22,30 @@ library(htmltools)
 
 ```
 
+Introduction
+=================================================================================
+
+
+
+
 
 Inflation effects in Countries {data-icon="ion-arrow-graph-up-right"}
 =================================================================================
 
-Column {.sidebar data-width=250}
+
+Row {.sidebar data-width=300}
 -------------------------------------
 
-** Developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. The global economy has not recovered from the GFC yet.
+**INFLATION**
 
-** Low inflation rate does not mean the currency is more valuable. On the contrary, it signals demand for goods and services is lower than expected and will then result in recession and the an increase in unemployment.
+These plots are the inflation rate and the labour force for US, France, Colombia and Egypt. For the inflation rate, we can see that for the developed countries, such as US and France, both have the pattern that there is a sharp down happened in 2015. This is because the crude oil price collapse. 
 
-**Developed countries usually have more stable inflation rate than developing countries. This is to keep the economy and the currency stable
+A number of factors can explain this, such as:
+
+1. the strong US dollar
+
+2. OPEC was unwilling to stabilise the oil price
+
 
 
 
@@ -156,15 +168,7 @@ infla_labour("France")
 
 
 
-
-
-
-
-
-
-
-
-Column {data-width=30%}
+Column {data-width=25%}
 -----------------------------------------------------------------------
 
 
@@ -185,6 +189,27 @@ t1
 
 Gender Distribution in Labour Force {data-icon="ion-ios-color-filter"}
 =================================================================================
+
+
+Row {.sidebar data-width=300}
+---------------------------------------------------------------------------------
+
+
+**GENDER DISTRIBUTION**
+
+
+According to these plots, the amounts of female and male labour force are quite equal, as we can see both lines overlap. Additionally, US has the most labour force, it is just simply due to the big population.
+
+
+
+
+
+**LIFE EXPECTANCY**
+
+
+* Life expectancy for both genders. It is really obvious that female lives longer than male.
+
+
 
 Row {.tabset}
 ---------------------------------------------------------------------------------
@@ -217,7 +242,7 @@ analysis %>%
   theme_light()
 ```
 
-The life expectancy for female is obviously higher than male. More interestingly, US and France are having a stable life expectancy from 2011 til 2019, while in Egypt and Colombia, the life expectancy for both genders is increasing.
+
 
 
 Employment Analysis by Country and Income {data-icon="ion-android-globe"}
@@ -267,16 +292,17 @@ byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`
 ```
 
 
-Column {.sidebar data-width=250}
--------------------------------------
-```{r}
 
+Row {.sidebar data-width=300}
+---------------------------------------------------------------------------------
 
-HTML("<p>The core analysis of this report is to analyze the different workforce distribution among high and low income countries and the gender distribution inside them. High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
+**Analysis by Gender**
 
-Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries.</p></br>")
+* High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
 
-```
+* The distribution in the job market according to the gender and country tends to variate according to the economy of each country. 
+
+* High income countries such as United States or France manages a similar trend in every industry according to the gender.
 
 
 Column
@@ -354,13 +380,12 @@ Gender Workforce Comparison by Industry. {data-icon="ion-ios-people"}
 =================================================================================
 
 
-Column {.sidebar data-width=200}
--------------------------------------
-```{r}
+Row {.sidebar data-width=300}
+---------------------------------------------------------------------------------
 
+**Gender Workforce by Industry**
 
-HTML("<p>As seen in the current analysis the economical capacity of the countries can infer in the workforce distribution. In a general view of the selected samples, females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.</p></br>")
-```
+*  Females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.
 
 
 
@@ -406,16 +431,18 @@ byyear %>% ggplot(aes(x = `Year`,
 Unemployed by Gender and Country {data-icon="ion-android-globe"}
 =================================================================================
 
-Column {.sidebar data-width=200}
--------------------------------------
-```{r}
 
-HTML("<p>The percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt.
+Row {.sidebar data-width=300}
+---------------------------------------------------------------------------------
 
-The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt,the employment rate is more for men than women.[@social]
+**Unemployment by Gender and Country**
 
-Another interesting observation from table previous tables was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@Education].</p></br>")
-```
+* The percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt.
+
+* The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt, the employment rate is more for men than women.
+
+* Another interesting observation from table previous tables was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods.
+
 
 
 
@@ -544,6 +571,33 @@ values_from = "count")
 countries <- c("Colombia", "United States", "France", "Egypt, Arab Rep.")
 
 ```
+
+
+Row {.sidebar data-width=400}
+---------------------------------------------------------------------------------
+
+**Advance Education**
+
+* Unemployment rates fall with higher educational attainment. As shown in the figures, we can see that the overall percentage of unemployment is between 2% to 6% in developed countries and close to 10%  in developing countries. 
+
+* Moreover the difference between the ratio of males and females unemployed is also low with advanced education for all countries except Egypt, where the difference is close to 15%.  Possible reasons for that include the high cost of childcare, the expectation that women carry out the majority of household responsibilities, negative attitudes toward women in the workplace, lack of mobility, legal barriers, persistent wage gaps, sexual harassment in the workplace, and poor enforcement of anti-discrimination laws.
+
+**Basic Education** 
+
+* It is interesting to see that the percentage of unemployment of males is more than that of females for all the years in France.
+
+* Egypt shows that with just basic education the percentage of unemployment can decrease. The gap between males and females unemployment has gone down from 9% to almost 3% over the years. 
+
+
+**Intermediate Education**
+
+* Those with low educational attainment *intermediate education* are both less likely to be labor force participants and more likely to be unemployed. The greatest gender differences in unemployment rates are seen among adults with lower levels of education as shown in the above figures. The percent of female unemployment is close to 30% in females whereas its 11% for males
+
+* Whereas in developed countries even though the percentage of unemployment is high with intermediate education, it's satisfying to see that it is almost equal for both males and females.
+
+
+
+
 
 Column {.tabset}
 ---------------------------------------------------------------------------------
@@ -707,5 +761,11 @@ fig
 
 
 
+Conclusions {data-icon="ion-trophy"}
+=================================================================================
+
+
+
+In regards of the employment in high and low income countries, it can  be seen that females are always leading the services sector and in the case of males, industry and agriculture take the highest number of workers. But overall, the highest income level, the lowest the amount of people working in industries such as industry or agriculture.
 
 
