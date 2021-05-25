@@ -180,7 +180,7 @@ Figure\@ref(fig:A3) shows the lines for female labour force and the male labour 
 
 ## Life expectancy for female and male at birth
 
-```{r A4, echo=FALSE, warning=FALSE, message=FALSE}
+```{r A4, echo=FALSE, warning=FALSE, message=FALSE, fig.pos="Center"}
 analysis %>%
   ggplot(aes(x = Year))+
   geom_line(aes(y = Life_expectancy_at_birth_female), color = "red")+
@@ -720,6 +720,13 @@ Figure \@ref(fig:Intermediatedeving) shows the unemployment percentage of males 
 *Section 2*
 
 *Section 3*
+
+
+
+
+In regards of the employment in high and low income countries, it can  be seen that females are always leading the services sector and in the case of males, industry and agriculture take the highest number of workers. But overall, the highest income level, the lowest the amount of people working in industries such as industry or agriculture.
+
+
 
 \clearpage
 
