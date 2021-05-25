@@ -1,0 +1,587 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Analysis on Gender Statictics},
+  pdfauthor={Hsu, Quintero, Wadhwa},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{titling}
+\usepackage{float}
+\pretitle{\begin{center} \includegraphics[width=5in,height=6in]{Figures/logo.jpg}\LARGE\\}
+\posttitle{\end{center}}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\sectionfont{\color{blue}}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[style=authoryear-comp,]{biblatex}
+\addbibresource{references.bib}
+
+\title{Analysis on Gender Statictics}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Team 6- The Outsiders}
+\author{Hsu, Quintero, Wadhwa}
+\date{}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\clearpage
+
+\hypertarget{analysis}{%
+\section{Analysis}\label{analysis}}
+
+\section*{1}
+
+\hypertarget{inflation}{%
+\subsection{Inflation}\label{inflation}}
+
+\begin{verbatim}
+## [[1]]
+\end{verbatim}
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/A1-1.pdf}
+\caption{Inflation vs Labour force}
+\end{figure}
+
+\begin{verbatim}
+## 
+## [[2]]
+\end{verbatim}
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/A1-2.pdf}
+\caption{Inflation vs Labour force}
+\end{figure}
+
+\begin{verbatim}
+## 
+## [[3]]
+\end{verbatim}
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/A1-3.pdf}
+\caption{Inflation vs Labour force}
+\end{figure}
+
+\begin{verbatim}
+## 
+## [[4]]
+\end{verbatim}
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/A1-4.pdf}
+According to Figure@ref(fig:A1), developed countries such as United
+States and France both have the lowest inflation rate in 2015. This is
+because in 2015, the crude oil price collapsed.
+(\url{https://blogs.worldbank.org/developmenttalk/what-triggered-oil-price-plunge-2014-2016-and-why-it-failed-deliver-economic-impetus-eight-charts}),
+and the global economy has not recovered from the GFC yet.
+((\url{https://www.reuters.com/article/us-usa-economy-inflation-idUSKCN0UY1LH})).
+
+Moreover, low inflation rate does not mean the currency is more
+valuable. On the contrary, it signals demand for goods and services is
+lower than expected and will then result in recession and the an
+increase in unemployment.
+(\url{https://www.weforum.org/agenda/2019/06/inflation-is-healthy-for-the-economy-but-too-much-can-trigger-a-recession-7d37501704})
+
+Additionally, developed countries usually have more stable inflation
+rate than developing countries. This is to keep the economy and the
+currency stable.
+
+\begin{table}
+
+\caption{\label{tab:A2}Inflation and the labour force in 2015}
+\centering
+\begin{tabular}[t]{l|r|r|r}
+\hline
+Country Name & Year & Inflation & labour\_force\\
+\hline
+Colombia & 2015 & 4.9902343 & 32207438\\
+\hline
+United States & 2015 & 0.1186271 & 212046898\\
+\hline
+France & 2015 & 0.0375144 & 41770007\\
+\hline
+Egypt, Arab Rep. & 2015 & 10.3704903 & 56930104\\
+\hline
+\end{tabular}
+\end{table}
+
+Table @ref(tab:A2) shows the 2015 inflation rate.
+
+\hypertarget{gender-distribution-for-labour-force}{%
+\subsection{Gender distribution for labour
+force}\label{gender-distribution-for-labour-force}}
+
+Moreover, the labour force in each country is increasing but decreasing
+in France. We will take a deeper look in the employment and unemployment
+in the following sections and try to conclude why the labour force for
+France is decreasing.
+
+Let's also look at the gender distribution in the labour force.
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/A3-1.pdf}
+
+Figure@ref(fig:A3) shows the lines for female labour force and the male
+labour force are almost overlapped with each other, meaning the gender
+distribution for labour force is fairly equal in these countries.
+
+\hypertarget{life-expectancy-for-female-and-male-at-birth}{%
+\subsection{Life expectancy for female and male at
+birth}\label{life-expectancy-for-female-and-male-at-birth}}
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/A4-1.pdf}
+
+Figure@ref(fig:A4) shows the life expectancy for female is obviously
+higher than male. More interestingly, US and France are having a stable
+life expectancy from 2011 til 2019, while in Egypt and Colombia, the
+life expectancy for both genders is increasing.
+
+\clearpage
+
+\section*{2}
+
+\hypertarget{employment-analysis-by-country}{%
+\subsection{Employment Analysis by
+Country}\label{employment-analysis-by-country}}
+
+The core analysis of this report is to analyze the different workforce
+distribution among high and low income countries and the gender
+distribution inside them. High income countries such as United States
+and France and low income such as Colombia and Egypt were taken into
+account to evaluate the labor force condition and the general trends of
+the citizens performing jobs in agriculture, industry and services jobs.
+
+Having a closer look to the data, the distribution in the job market
+according to the gender and country it is taking part in, tends to
+variate according to the economy of each country. High income countries
+such as United States or France manages a similar trend in every
+industry according to the gender. But also, it can be seen that the
+rates are different compared to the low income countries.
+
+\hypertarget{high-income-countries-workforce}{%
+\subsection{High Income Countries
+Workforce}\label{high-income-countries-workforce}}
+
+The higher income countries have, the higher participation in services
+by males. On the other hand, there is lower concentration in the
+participation of female in industries that are considered ``Masculine''
+for the time being, agriculture and industry.
+
+For high income countries the similarity in the allocation of workforce
+among the studies industries is surprisingly similar. in the figure
+@ref(fig:highinc) USA and France have an average of 67\% of male
+workforce, also, have a similar percentage by 2019 in industry of 30\%
+and in agriculture of 4\%.
+
+Generally, females are on top of the chart with about 90\% working in
+services, and with similar rates for agriculture and industry of 1\% and
+9\% respectively.
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/highinc-1.pdf}
+
+\hypertarget{low-income-countries-workforce}{%
+\subsection{Low Income Countries
+Workforce}\label{low-income-countries-workforce}}
+
+Males in the job market for low income countries keep similar trends for
+the jobs in agriculture. In 2019, in Colombia and Egypt got in average
+25\% of male participation. In industry, Colombia and Egypt have a
+notorious difference of 25\% and 32\% respectively.
+
+In the case of females, they keep an average from 10\% to 20\% in
+``Masculine'' jobs, as per in services, they keep from 50\% to 80\%.
+Egypt had a huge decline in the agricultural jobs for females from a
+43\% to 21\%. It is remarkable this variation along the previous 9 years
+as well as that the woman workforce seemed to move in the same rate to
+the services industry as seen in the figure @ref(fig:lowinc) below.
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/lowinc-1.pdf}
+
+\hypertarget{gender-workforce-distribution-by-country}{%
+\subsection{Gender Workforce Distribution by
+Country}\label{gender-workforce-distribution-by-country}}
+
+As seen in the current analysis the economical capacity of the countries
+can infer in the workforce distribution. In a general view of the
+selected samples, females have in all of them the highest rate of
+employment in services as well as the lowest in agriculture, this does
+not apply in Egypt but the current trend is showing that there is a
+moving out of that industry.
+
+Similarly, males have the highest level of employment in services, but
+they keep leading the industry and agricultural workforce. It is
+noticeable that if a country is wealthy, there is a higher level of
+participation of females in service jobs compared to low income
+countries. On the other hand, despite the income level of the country
+males keep the same percentage among the countries. See figure
+@ref(fig:allcountries).
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/allcountries-1.pdf}
+
+\hypertarget{gender-workforce-comparison-by-industry.}{%
+\subsection{Gender Workforce Comparison by
+Industry.}\label{gender-workforce-comparison-by-industry.}}
+
+From other point of view and analyzing the variables across all the
+countries it can be seen that the genders maintain a similar level of
+employment according to the selected industries.
+
+\hypertarget{female-and-male-employment-in-agriculture.}{%
+\subsection{Female and Male Employment in
+Agriculture.}\label{female-and-male-employment-in-agriculture.}}
+
+in the figure @ref(fig:agriculture) women keep the lowest participation
+in agriculture and industry jobs in the selected countries except Egypt
+which have had a decrease around of 50\% during the past 9 years,
+keeping lowest rates compared to male results. The level of jobs have
+been steady for males and females during the analyzed years.
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/agriculture-1.pdf}
+
+\hypertarget{female-and-male-employment-in-industry.}{%
+\subsection{Female and Male Employment in
+Industry.}\label{female-and-male-employment-in-industry.}}
+
+In the case of industry jobs, male keep a highest rate compared to
+female across the analyzed countries. In 2019 the number of female rose
+by 5\% in Egypt, while in Colombia decreased by 2\% and in USA and
+France maintained the same levels.
+
+In the case of males, all the countries maintained about the same levels
+since 2011 as seen in the figure @ref(fig:industry).
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/industry-1.pdf}
+
+\hypertarget{female-and-male-employment-in-services.}{%
+\subsection{Female and Male Employment in
+Services.}\label{female-and-male-employment-in-services.}}
+
+Female have a highest participation in the services sector compared to
+males and across all the industries.
+
+In general, all the countries kept the same average levels since 2011
+and they are in a similar range despite the income level of the country.
+But, Egypt has an interesting variation of the the jobs allocation. In
+this case, females in services have rose over 30\% in the last years,
+maintaining the leading over their male peers. In this Industry Egypt
+has the lowest of people, but the trend keeps a future positive path as
+well as France. See figure @ref(fig:services).
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/services-1.pdf}
+
+\hypertarget{gender-workforce-by-industry}{%
+\subsection{Gender Workforce by
+Industry}\label{gender-workforce-by-industry}}
+
+In summary, females across all countries have lower levels than male
+occupations in agriculture and industry. On the other hand females have
+the lead in the services job market, the most notorious case of growth
+in this industry was Egypt that in 2019 the percentage of females in
+this industry was 71\%.
+
+\includegraphics{The_Outsiders_5513_files/figure-latex/allvars-1.pdf}
+
+\clearpage
+
+\section*{3}
+
+\hypertarget{analysis-on-total-unemployed-males-and-females-in-developed-and-developing-countries}{%
+\subsection{Analysis on total unemployed males and females in developed
+and developing
+countries}\label{analysis-on-total-unemployed-males-and-females-in-developed-and-developing-countries}}
+
+\textbf{United States \& France}
+
+\begin{table}
+
+\caption{\label{tab:tabref}Unemployed percentage of males and females in Developed countries}
+\centering
+\begin{tabular}[t]{l|l|r|r}
+\hline
+Country Name & Year & Unemployed\_F & Unemployed\_M\\
+\hline
+France & 2011 & 9.12 & 8.530000\\
+\hline
+France & 2012 & 9.36 & 9.440000\\
+\hline
+France & 2013 & 9.79 & 10.040000\\
+\hline
+France & 2014 & 10.03 & 10.540000\\
+\hline
+France & 2015 & 9.91 & 10.770001\\
+\hline
+France & 2016 & 9.84 & 10.220000\\
+\hline
+France & 2017 & 9.37 & 9.440000\\
+\hline
+France & 2018 & 9.05 & 8.990000\\
+\hline
+France & 2019 & 8.38 & 8.500000\\
+\hline
+United States & 2011 & 8.46 & 9.370000\\
+\hline
+United States & 2012 & 7.89 & 8.229999\\
+\hline
+United States & 2013 & 7.08 & 7.640000\\
+\hline
+United States & 2014 & 6.06 & 6.260000\\
+\hline
+\cellcolor{red}{\textcolor{white}{\textbf{United States}}} & \cellcolor{red}{\textcolor{white}{\textbf{2015}}} & \cellcolor{red}{\textcolor{white}{\textbf{5.18}}} & \cellcolor{red}{\textcolor{white}{\textbf{5.370000}}}\\
+\hline
+United States & 2016 & 4.79 & 4.940000\\
+\hline
+United States & 2017 & 4.31 & 4.400000\\
+\hline
+United States & 2018 & 3.84 & 3.950000\\
+\hline
+United States & 2019 & 3.61 & 3.720000\\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Colombia \& Egypt, Arab Rep.}
+
+\begin{table}
+
+\caption{\label{tab:tabref1}Unemployed percentage of males and females in Developing countries}
+\centering
+\begin{tabular}[t]{l|l|r|r}
+\hline
+Country Name & Year & Unemployed\_F & Unemployed\_M\\
+\hline
+Colombia & 2011 & 13.10 & 7.910000\\
+\hline
+Colombia & 2012 & 12.66 & 7.550000\\
+\hline
+Colombia & 2013 & 11.67 & 7.070000\\
+\hline
+Colombia & 2014 & 11.03 & 6.720000\\
+\hline
+Colombia & 2015 & 10.84 & 6.360000\\
+\hline
+Colombia & 2016 & 11.21 & 6.780000\\
+\hline
+Colombia & 2017 & 11.51 & 6.870000\\
+\hline
+Colombia & 2018 & 11.79 & 7.090000\\
+\hline
+Colombia & 2019 & 12.75 & 7.880000\\
+\hline
+Egypt, Arab Rep. & 2011 & 22.44 & 8.770001\\
+\hline
+Egypt, Arab Rep. & 2012 & 24.01 & 9.229999\\
+\hline
+Egypt, Arab Rep. & 2013 & 24.17 & 9.800000\\
+\hline
+Egypt, Arab Rep. & 2014 & 24.00 & 9.729999\\
+\hline
+\cellcolor{red}{\textcolor{white}{\textbf{Egypt, Arab Rep.}}} & \cellcolor{red}{\textcolor{white}{\textbf{2015}}} & \cellcolor{red}{\textcolor{white}{\textbf{24.81}}} & \cellcolor{red}{\textcolor{white}{\textbf{9.390000}}}\\
+\hline
+Egypt, Arab Rep. & 2016 & 23.58 & 8.840000\\
+\hline
+Egypt, Arab Rep. & 2017 & 23.01 & 8.220000\\
+\hline
+Egypt, Arab Rep. & 2018 & 21.34 & 6.770000\\
+\hline
+Egypt, Arab Rep. & 2019 & NA & NA\\
+\hline
+\end{tabular}
+\end{table}
+
+From table @ref(tab:tabref) and table @ref(tab:tabref1) we can summarize
+that clearly the percentage of female unemployment is way \emph{more in
+developing countries} than that of the \emph{developed countries} like
+US and France. For instance, in \textbf{2015} the reported percentage of
+females unemployed in United States was just 5\% where as it was 24
+percentage in developing countries like Egypt.
+
+The gap in participation rates between men and women is narrowing in
+developed countries but continues to widen in developing countries, as
+we can observe that the percentage is almost equal for both males and
+females in US and France where as in Columbia and Egypt,the employment
+rate is more for men than women.\autocite{social}
+
+Another interesting observation from table @ref(tab:tabref) and table
+@ref(tab:tabref1) was seen that the overall unemployment tread in the
+developing countries is more than that of developed countries. The basic
+cause of this can be the deficiency of the availability of essential
+consumer goods, often called wage goods \autocite{Education}.
+
+\hypertarget{analysis-on-unemployed-males-and-females-on-the-bases-of-qualifications}{%
+\subsection{Analysis on unemployed males and females on the bases of
+qualifications}\label{analysis-on-unemployed-males-and-females-on-the-bases-of-qualifications}}
+
+\textbf{Advance Education}
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/Advancedeved-1.pdf}
+\caption{Unemployment with advanced education in developed countries}
+\end{figure}
+
+Figure @ref(fig:Advancedeved) shows the unemployment percentage of males
+and females with advanced education in developed countries like United
+states and France.
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/Advancedeving-1.pdf}
+\caption{Unemployment with advanced education in developing countries}
+\end{figure}
+
+Figure @ref(fig:Advancedeving) shows the unemployment percentage of
+males and females with advanced education in developing countries like
+Colombia and Egypt.
+
+\textbf{Basic Education}
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/Basicdeved-1.pdf}
+\caption{Unemployment with basic education in developed countries}
+\end{figure}
+
+Figure @ref(fig:Basicdeved) shows the unemployment percentage of males
+and females with basic education in developed countries like United
+states and France.
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/Basicdeving-1.pdf}
+\caption{Unemployment with basic education in developing countries}
+\end{figure}
+
+Figure @ref(fig:Basicdeving) shows the unemployment percentage of males
+and females with basic education in developing countries like Colombia
+and Egypt.
+
+\textbf{Intermediate Education}
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/Intermediatedeved-1.pdf}
+\caption{Unemployment with intermediate education in developed
+countries}
+\end{figure}
+
+Figure @ref(fig:Intermediatedeved) shows the unemployment percentage of
+males and females with intermediate education in developed countries
+like United states and France.
+
+\begin{figure}
+\centering
+\includegraphics{The_Outsiders_5513_files/figure-latex/Intermediatedeving-1.pdf}
+\caption{Unemployment with intermediate education in developing
+countries}
+\end{figure}
+
+Figure @ref(fig:Intermediatedeving) shows the unemployment percentage of
+males and females with intermediate education in developing countries
+like Colombia and Egypt.
+
+\clearpage
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+In regards of the employment in high and low income countries, it can be
+seen that females are always leading the services sector and in the case
+of males, industry and agriculture take the highest number of workers.
+But overall, the highest income level, the lowest the amount of people
+working in industries such as industry or agriculture.
+
+\clearpage
+
+\printbibliography
+
+\end{document}

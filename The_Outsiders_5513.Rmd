@@ -160,6 +160,7 @@ analysis %>%
   geom_line(aes(y = Population_ages_15_64_male), color = "green")+
   ylab("Gender distribution for labour force")+
   scale_x_continuous(breaks = c(2011:2019))+
+    scale_y_continuous(labels = scales::comma)+
   theme_light()+
   facet_wrap(~`Country Name`)
 ```

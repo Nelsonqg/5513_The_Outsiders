@@ -1,5 +1,5 @@
 ---
-title: "Presentation for Country Fire Condition"
+title: "Analysis on Gender Statictics"
 output: 
   flexdashboard::flex_dashboard:
     orientation: 
@@ -25,11 +25,38 @@ library(htmltools)
 Introduction
 =================================================================================
 
+<b><font face="Georgia" size="8em" color="#063c91">INTRODUCTION</font></b>
+
+***
+Gender inequality remains a major barrier to human development. Girls and women have made major strides since 1990, but they have not yet gained gender equity. 
+
+Women who want to work have a harder time finding a job than men. This problem is particularly marked in developing countries where the unemployment rate for women is more than that of developed countries.
+
+Hence, the primary analysis of our presentation is to compare and contrast the gender statistic in developed countries like *United States & France* and developing countries like *Colombia and Egypt* from the years 2010 to 2019 on various factors like:
+
+* Comparison of  *inflation, gender distribution for the labor force, and life expectancy* in various countries.
+
+* Gender workflow distribution and  gender workflow comparison in various sectors like agriculture, industry, and service**
+
+*  The analysis on the total unemployment difference between males and females and *analysis on the basis of qualifications in developed and developing countries.*
+
+***
+
+<b><font face="Georgia" size="6em" color="#063c91">Team Members</font></b>
+
+|Name	          |Email Id	                  |Student Id|
+|---------------|:-------------------------:|----------|
+|Hsin Hsu Janice|hhsu0002@student.monash.edu|32195109  |
+|Nelson Quintero|nqui0008@student.monash.edu|32254962  |
+|Ratul Wadhwa   |rwad0002@student.monash.edu|32055587  |
 
 
 
 
-Inflation effects in Countries {data-icon="ion-arrow-graph-up-right"}
+
+
+
+Inflation {data-icon="ion-arrow-graph-up-right"}
 =================================================================================
 
 
@@ -187,7 +214,7 @@ t1
 
 
 
-Gender Distribution in Labour Force {data-icon="ion-ios-color-filter"}
+Gender Distribution {data-icon="ion-ios-color-filter"}
 =================================================================================
 
 
@@ -222,6 +249,7 @@ analysis %>%
   geom_line(aes(y = Population_ages_15_64_male), color = "green")+
   ylab("Gender distribution for labour force")+
   scale_x_continuous(breaks = c(2011:2019))+
+    scale_y_continuous(labels = scales::comma)+
   theme_light()+
   facet_wrap(~`Country Name`)
 ```
@@ -238,6 +266,7 @@ analysis %>%
   geom_line(aes(y = Life_expectancy_at_birth_male), color = "green")+
   ylab("Life expectancy for female and male")+
   scale_x_continuous(breaks = c(2011:2019))+
+    scale_y_continuous(labels = scales::comma)+
   facet_wrap(~`Country Name`)+
   theme_light()
 ```
@@ -245,7 +274,7 @@ analysis %>%
 
 
 
-Employment Analysis by Country and Income {data-icon="ion-android-globe"}
+Employment by Country {data-icon="ion-android-globe"}
 =================================================================================
 
 ```{r readingdata, message=FALSE, echo=FALSE, warning=FALSE}
@@ -376,7 +405,7 @@ colegyemp
 
 
 
-Gender Workforce Comparison by Industry. {data-icon="ion-ios-people"}
+Workforce by Industry {data-icon="ion-ios-people"}
 =================================================================================
 
 
@@ -428,7 +457,7 @@ byyear %>% ggplot(aes(x = `Year`,
 
 
 
-Unemployed by Gender and Country {data-icon="ion-android-globe"}
+Unemployed by Gender {data-icon="ion-android-globe"}
 =================================================================================
 
 
@@ -529,7 +558,7 @@ developing <- Gender_statistics%>%
 
 
 
-Qualifications by Gender {data-icon="ion-ribbon-b"}
+Qualifications {data-icon="ion-ribbon-b"}
 =================================================================================
 
 ```{r echo= FALSE, warning=FALSE, message=FALSE}
@@ -766,6 +795,67 @@ Conclusions {data-icon="ion-trophy"}
 
 
 
-In regards of the employment in high and low income countries, it can  be seen that females are always leading the services sector and in the case of males, industry and agriculture take the highest number of workers. But overall, the highest income level, the lowest the amount of people working in industries such as industry or agriculture.
+
+***
+With the help of our analysis, we can conclude that even though the gap between males and females is reducing in developed countries in terms of employment, it is important that equal opportunities are given to the female gender in the developing countries as well. As with this many developing countries would also see their average annual GDP growth increase. 
+
+***
+ETC5513- Collaborative and reproducible practices and Github made the whole process of collaborating with colleagues much easier for us. This is the biggest advantages of using Git. Unlike other systems, where all our code stored in one place and changes need to be carefully made one at a time, Git made it easy for us to make changes and merge them with our main analysis. No matter how big or small the change is, with the help of new branch the changes were made smoothly without risking of breaking the whole report.
+
+*Regardless of the time difference, with the help of GITHUB it was easy for us to collaborate and produce a reproducible report*
+
+***
+*References*
+
+[1] Barret Schloerke, Di Cook, Joseph Larmarange, Francois Briatte, Moritz Marbach, Edwin
+  Thoen, Amos Elberg and Jason Crowley (2021). GGally: Extension to 'ggplot2'. R package
+  version 2.1.1. https://CRAN.R-project.org/package=GGally
+
+[2] C. Sievert. Interactive Web-Based Data Visualization with R, plotly, and shiny. Chapman and Hall/CRC Florida, 2020.
+
+[3]David Robinson, Alex Hayes and Simon Couch (2021). broom: Convert Statistical Objects
+  into Tidy Tibbles. R package version 0.7.5. https://CRAN.R-project.org/package=broom
+
+[4] Economic Co-operation, Organisation for and Development (OECD) (2010).Education at a glance 2010:OECD indicators. OECD Paris.
+
+[5] H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York,
+  2016.
+
+[6] Hadley Wickham (2019). stringr: Simple, Consistent Wrappers for Common String
+  Operations. R package version 1.4.0. https://CRAN.R-project.org/package=stringr
+
+[7] Hadley Wickham and Jim Hester (2020). readr: Read Rectangular Text Data. R package
+  version 1.4.0. https://CRAN.R-project.org/package=readr
+
+[8] Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2021). dplyr: A Grammar of Data Manipulation. R package version 1.0.5. https://CRAN.R-project.org/package=dplyr
+
+[9] Hao Zhu (2021). kableExtra: Construct Complex Table with 'kable' and Pipe Syntax. R
+  package version 1.3.4. https://CRAN.R-project.org/package=kableExtra
+
+[10] Nicholas Tierney, Di Cook, Miles McBain and Colin Fay (2020). naniar: Data Structures,
+  Summaries, and Visualisations for Missing Data. R package version 0.6.0.
+  https://CRAN.R-project.org/package=naniar
+
+[11] Office, International Labour (2018).World employment and social outlook: Trends for women  2018—Globalsnapshot.22
+
+[12] Thomas Lin Pedersen (2020). patchwork: The Composer of Plots. R package version 1.1.1.
+  https://CRAN.R-project.org/package=patchwork
+
+[13] Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software,
+  4(43), 1686, https://doi.org/10.21105/joss.01686
+
+[14] Winston Chang (2019). webshot: Take Screenshots of Web Pages. R package version 0.5.2.
+  https://CRAN.R-project.org/package=webshot
+
+[15] Yihui Xie (2020). bookdown: Authoring Books and Technical Documents with R Markdown. R
+  package version 0.21.
+
+***
+<b><font face="Georgia" size="8em" color="#063c91">Thank You!</font></b>
+
+
+
+
+
 
 
