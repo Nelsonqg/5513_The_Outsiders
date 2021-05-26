@@ -7,8 +7,6 @@ output:
     source_code: embed
 ---
 
-
-
 ```{r setup, include=FALSE, message=FALSE, warning=FALSE, echo=FALSE}
 knitr::opts_chunk$set(include=TRUE, message=FALSE, warning=FALSE, echo=FALSE)
 library(readr)
@@ -22,7 +20,7 @@ library(htmltools)
 
 ```
 
-Introduction
+Introduction {data-icon="fa-globe"}
 =================================================================================
 
 <b><font face="Georgia" size="8em" color="#063c91">INTRODUCTION</font></b>
@@ -50,30 +48,21 @@ Hence, the primary analysis of our presentation is to compare and contrast the g
 |Nelson Quintero|nqui0008@student.monash.edu|32254962  |
 |Ratul Wadhwa   |rwad0002@student.monash.edu|32055587  |
 
-
-
-
-
-
-
 Inflation {data-icon="ion-arrow-graph-up-right"}
 =================================================================================
-
 
 Row {.sidebar data-width=300}
 -------------------------------------
 
 **INFLATION**
 
-These plots are the inflation rate and the labour force for US, France, Colombia and Egypt. For the inflation rate, we can see that for the developed countries, such as US and France, both have the pattern that there is a sharp down happened in 2015. This is because the crude oil price collapse. 
+These plots are the **inflation rate and the labor force for US, France, Colombia and Egypt**. For the inflation rate, we can see that for the developed countries, such as US and France, both have the pattern that there is a **sharp down happened in 2015**. This is because the crude oil price collapse. 
 
 A number of factors can explain this, such as:
 
 1. the strong US dollar
 
 2. OPEC was unwilling to stabilise the oil price
-
-
 
 
 Column {.tabset data-width=70%} 
@@ -165,7 +154,6 @@ p1 + p2
 
 ### Colombia
 
-
 ```{r}
 infla_labour("Colombia")
 ```
@@ -176,7 +164,6 @@ infla_labour("Colombia")
 
 infla_labour("Egypt, Arab Rep.")
 ```
-
 
 ### United States
 
@@ -192,12 +179,8 @@ infla_labour("France")
 
 ```
 
-
-
-
 Column {data-width=25%}
 -----------------------------------------------------------------------
-
 
 ```{r A2, echo=FALSE, warning=FALSE, message=FALSE}
 library(kableExtra)
@@ -213,29 +196,20 @@ t1
 ```
 
 
-
 Gender Distribution {data-icon="ion-ios-color-filter"}
 =================================================================================
-
 
 Row {.sidebar data-width=300}
 ---------------------------------------------------------------------------------
 
-
 **GENDER DISTRIBUTION**
 
-
-According to these plots, the amounts of female and male labour force are quite equal, as we can see both lines overlap. Additionally, US has the most labour force, it is just simply due to the big population.
-
-
-
+According to these plots, the **amounts of female and male labor force are quite equal**, as we can see both lines overlap. Additionally, US has the most labor force, it is just simply due to the big population.
 
 
 **LIFE EXPECTANCY**
 
-
 * Life expectancy for both genders. It is really obvious that female lives longer than male.
-
 
 
 Row {.tabset}
@@ -254,9 +228,6 @@ analysis %>%
   facet_wrap(~`Country Name`)
 ```
 
-
-
-
 ### Life Expectancy for Female and Male at Birth
 
 ```{r A4, echo=FALSE, warning=FALSE, message=FALSE, fig.pos="Center"}
@@ -271,10 +242,7 @@ analysis %>%
   theme_light()
 ```
 
-
-
-
-Employment by Country {data-icon="ion-android-globe"}
+Employment-Country {data-icon="ion-android-globe"}
 =================================================================================
 
 ```{r readingdata, message=FALSE, echo=FALSE, warning=FALSE}
@@ -321,7 +289,6 @@ byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`
 ```
 
 
-
 Row {.sidebar data-width=300}
 ---------------------------------------------------------------------------------
 
@@ -332,7 +299,6 @@ Row {.sidebar data-width=300}
 * The distribution in the job market according to the gender and country tends to variate according to the economy of each country. 
 
 * High income countries such as United States or France manages a similar trend in every industry according to the gender.
-
 
 Column
 -----------------------------------------------------------------------
@@ -366,13 +332,10 @@ usafraemp
 
 ```
 
-
-
 Column
 ----------------------------------------------------------------------- 
 
 ### Low Income Countries
-
 
 ```{r lowinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -401,11 +364,7 @@ colegyemp
 ```
 
 
-
-
-
-
-Workforce by Industry {data-icon="ion-ios-people"}
+Workforce-Industry {data-icon="ion-ios-people"}
 =================================================================================
 
 
@@ -414,8 +373,7 @@ Row {.sidebar data-width=300}
 
 **Gender Workforce by Industry**
 
-*  Females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.
-
+*  Females have in all of them the **highest rate of employment in services as well as the lowest in agriculture**, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.
 
 
 Column {column-width=40%}
@@ -453,11 +411,7 @@ byyear %>% ggplot(aes(x = `Year`,
 
 ```
 
-
-
-
-
-Unemployed by Gender {data-icon="ion-android-globe"}
+Unemployed-Gender {data-icon="ion-android-globe"}
 =================================================================================
 
 
@@ -468,11 +422,9 @@ Row {.sidebar data-width=300}
 
 * The percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt.
 
-* The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt, the employment rate is more for men than women.
+* The **gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries**, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt, the employment rate is more for men than women.
 
-* Another interesting observation from table previous tables was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods.
-
-
+* Another interesting observation from the tables was seen that the **overall unemployment tread in the developing countries is more than that of developed countries**. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods.
 
 
 Column {data-height=900}
@@ -555,9 +507,6 @@ developing <- Gender_statistics%>%
      row_spec(14, bold = T, color = "white", background = "red")
 ```
 
-
-
-
 Qualifications {data-icon="ion-ribbon-b"}
 =================================================================================
 
@@ -607,32 +556,26 @@ Row {.sidebar data-width=400}
 
 **Advance Education**
 
-* Unemployment rates fall with higher educational attainment. As shown in the figures, we can see that the overall percentage of unemployment is between 2% to 6% in developed countries and close to 10%  in developing countries. 
+* **Unemployment rates fall with higher educational attainment**. As shown in the figures, we can see that the overall percentage of unemployment is between 2% to 6% in developed countries and close to 10%  in developing countries. 
 
-* Moreover the difference between the ratio of males and females unemployed is also low with advanced education for all countries except Egypt, where the difference is close to 15%.  Possible reasons for that include the high cost of childcare, the expectation that women carry out the majority of household responsibilities, negative attitudes toward women in the workplace, lack of mobility, legal barriers, persistent wage gaps, sexual harassment in the workplace, and poor enforcement of anti-discrimination laws.
+* Moreover the difference between the **ratio of males and females unemployed is also low with advanced education for all countries except Egypt**, where the difference is close to 15%.  Possible reasons for that include the high cost of childcare, the expectation that women carry out the majority of household responsibilities, negative attitudes toward women in the workplace, lack of mobility, legal barriers, persistent wage gaps, sexual harassment in the workplace, and poor enforcement of anti-discrimination laws.
 
 **Basic Education** 
 
-* It is interesting to see that the percentage of unemployment of males is more than that of females for all the years in France.
+* It is interesting to see that the **percentage of unemployment of males is more than that of females for all the years in France**.
 
 * Egypt shows that with just basic education the percentage of unemployment can decrease. The gap between males and females unemployment has gone down from 9% to almost 3% over the years. 
-
 
 **Intermediate Education**
 
 * Those with low educational attainment *intermediate education* are both less likely to be labor force participants and more likely to be unemployed. The greatest gender differences in unemployment rates are seen among adults with lower levels of education as shown in the above figures. The percent of female unemployment is close to 30% in females whereas its 11% for males
 
-* Whereas in developed countries even though the percentage of unemployment is high with intermediate education, it's satisfying to see that it is almost equal for both males and females.
-
-
-
+* Whereas in **developed countries even though the percentage of unemployment is high with intermediate education**, it's satisfying to see that it is almost **equal for both males and females**.
 
 
 Column {.tabset}
 ---------------------------------------------------------------------------------
 ### Advanced Education
-
-
 
 
 ```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -660,9 +603,6 @@ fig
 ```
 
 
-
-
-
 ```{r Advancedeving, fig.cap = "Unemployment with advanced education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
 
 Advance_education_developing <- Gender_statistics%>%
@@ -684,14 +624,8 @@ fig <- ggplotly(q)
 fig
 ```
 
-
-
-
 ### Intermediate Education
 
-
-
- 
 ```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
 
 intermediate_education_developed <- Gender_statistics%>%
@@ -710,9 +644,6 @@ fig <- ggplotly(t)
 
 fig
 ```
-
-
-
 
 
 ```{r Intermediatedeving, fig.cap = "Unemployment with intermediate education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
@@ -735,11 +666,7 @@ fig <- ggplotly(u)
 fig
 ```
 
-
-
 ### Basic Education
-
-
 
 ```{r Basicdeved, fig.cap = "Unemployment with basic education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -762,7 +689,6 @@ fig <- ggplotly(r)
 fig
 
 ```
-
 
 
 ```{r Basicdeving, fig.cap = "Unemployment with basic education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
@@ -789,14 +715,11 @@ fig
 ```
 
 
-
-Conclusions {data-icon="ion-trophy"}
+Conclusions
 =================================================================================
 
-
-
-
 ***
+
 With the help of our analysis, we can conclude that even though the gap between males and females is reducing in developed countries in terms of employment, it is important that equal opportunities are given to the female gender in the developing countries as well. As with this many developing countries would also see their average annual GDP growth increase. 
 
 ***
