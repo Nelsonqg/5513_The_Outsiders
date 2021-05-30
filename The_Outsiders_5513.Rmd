@@ -18,8 +18,8 @@ subtitle: "Team 6- The Outsiders"
 header-includes:
 - \usepackage{titling}
 - \usepackage{float}
-- \pretitle{\begin{center} 
-  \includegraphics[width=5in,height=6in]{Figures/logo.jpg}\LARGE\\}
+- \pretitle{\begin{center}
+ \includegraphics[width=5in,height=6in]{Figures/logo.jpg}\LARGE\\}
 - \posttitle{\end{center}}
 - \usepackage{fontawesome}
 - \usepackage[most]{tcolorbox}
@@ -137,9 +137,9 @@ p1 + p2
 Q1 <- map(countries, infla_labour)
 print(Q1)
 ```
-According to Figure\@ref(fig:A1), developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. (https://blogs.worldbank.org/developmenttalk/what-triggered-oil-price-plunge-2014-2016-and-why-it-failed-deliver-economic-impetus-eight-charts), and the global economy has not recovered from the GFC yet. ((https://www.reuters.com/article/us-usa-economy-inflation-idUSKCN0UY1LH)). 
+According to Figure\@ref(fig:A1), developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. [@stocker], and the global economy has not recovered from the GFC yet [@inflation1]. 
 
-Moreover, low inflation rate does not mean the currency is more valuable. On the contrary, it signals demand for goods and services is lower than expected and will then result in recession and the an increase in unemployment. (https://www.weforum.org/agenda/2019/06/inflation-is-healthy-for-the-economy-but-too-much-can-trigger-a-recession-7d37501704)
+Moreover, low inflation rate does not mean the currency is more valuable. On the contrary, it signals demand for goods and services is lower than expected and will then result in recession and the an increase in unemployment [@inflation2].
 
 Additionally, developed countries usually have more stable inflation rate than developing countries. This is to keep the economy and the currency stable.
 
@@ -198,6 +198,7 @@ Figure\@ref(fig:A4) shows the life expectancy for female is obviously higher tha
 \section*{2}
 
 
+
 ```{r readingdata, message=FALSE, echo=FALSE, warning=FALSE}
 
 readingdata <- read_csv("data/088121e0-ea83-4b15-be2a-1bcc36ea893f_Data.csv")
@@ -246,7 +247,7 @@ byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`
 
 The core analysis of this report is to analyze the different workforce distribution among high and low income countries and the gender distribution inside them. High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
 
-Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries. 
+Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries. [@femaleworkforce]
 
 ## High Income Countries Workforce
 
@@ -289,7 +290,7 @@ usafraemp
 
 Males in the job market for low income countries keep similar trends for the jobs in agriculture. In 2019, in Colombia and Egypt got in average 25% of male participation. In industry, Colombia and Egypt have a notorious difference of 25% and 32% respectively. 
 
-In the case of females, they keep an average from 10% to 20% in "Masculine" jobs, as per in services, they keep from 50% to 80%. Egypt had a huge decline in the agricultural jobs for females from a 43% to 21%. It is remarkable this variation along the previous 9 years as well as that the  woman workforce seemed to move in the same rate to the services industry as seen in the figure \@ref(fig:lowinc) below.
+In the case of females, they keep an average from 10% to 20% in "Masculine" jobs, as per in services, they keep from 50% to 80%. Egypt had a huge decline in the agricultural jobs for females from a 43% to 21%. It is remarkable this variation along the previous 9 years as well as that the  woman workforce seemed to move in the same rate to the services industry as seen in the figure \@ref(fig:lowinc) below. [@WDAgriculture]
 
 ```{r lowinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -547,6 +548,7 @@ developed <- Gender_statistics%>%
    row_spec(14, bold = T, color = "white", background = "red")
 ```
 
+
 **Colombia & Egypt, Arab Rep.**
 
 ```{r tabref1, echo=FALSE, warning=FALSE, message=FALSE}
@@ -559,6 +561,7 @@ developing <- Gender_statistics%>%
   knitr::kable(developing, caption = "Unemployed percentage of males and females in Developing countries")%>%
   kable_classic_2(c("striped", "hover"), full_width = F, latex_options = "HOLD_position")%>%
      row_spec(14, bold = T, color = "white", background = "red")
+  
 ```
 
 From table \@ref(tab:tabref) and table \@ref(tab:tabref1) we can summarize that clearly the percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt. 
@@ -574,7 +577,6 @@ Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab
 ```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 
 library(webshot)
-webshot::install_phantomjs()
 ```
 
 ```{r Advancedeved, fig.cap = "Unemployment with advanced education in developed countries", echo=FALSE, warning=FALSE, message=FALSE, fig.pos='hold'}
@@ -618,6 +620,10 @@ fig
 ```
 
 Figure \@ref(fig:Advancedeving) shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
+
+* Unemployment rates fall with higher educational attainment. As shown in figures \@ref(fig:Advancedeved) and \@ref(fig:Advancedeving) we can see that the overall percentage of unemployment is between 2% to 6% in developed countries and close to 10%  in developing countries. 
+
+* Moreover the difference between the ratio of males and females unemployed is also low with advanced education for all countries except Egypt, where the difference is close to 15%.  Possible reasons for that include the high cost of childcare, the expectation that women carry out the majority of household responsibilities, negative attitudes toward women in the workplace, lack of mobility, legal barriers, persistent wage gaps, sexual harassment in the workplace, and poor enforcement of anti-discrimination laws [@barriersegypt]
 
 \clearpage
 
@@ -668,6 +674,10 @@ fig
 
 Figure \@ref(fig:Basicdeving) shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
 
+* It is interesting to see that the percentage of unemployment of males is more than that of females for all the years in France \@ref(fig:Basicdeved). 
+
+* Figure \@ref(fig:Basicdeving) Egypt shows that with just basic education the percentage of unemployment can decrease. The gap between males and females unemployment has gone down from 9% to almost 3% over the years. 
+
 \clearpage
 
 **Intermediate Education**
@@ -712,24 +722,18 @@ fig
 
 Figure \@ref(fig:Intermediatedeving) shows the unemployment percentage of males and females with intermediate education in developing countries like Colombia and Egypt.
 
+* Those with low educational attainment **intermediate education** are both less likely to be labor force participants and more likely to be unemployed. The greatest gender differences in unemployment rates are seen among adults with lower levels of education as shown in figure \@ref(fig:Intermediatedeving). The percentage of female unemployment is close to 30% in females whereas its 11% for males
+
+* Whereas in developed countries even though the percentage of unemployment is high with intermediate education, its satisfying to see that it is almost equal for both males and females \@ref(fig:Intermediatedeved). [@education]
+
+
 \clearpage
 
 # Conclusion
 
-*Section 1*
-
-*Section 2*
+With the help of our analysis, we can conclude that even though the gap between males and females is reducing in developed countries in terms of employment, it is important that equal opportunities are given to the female gender in the developing countries as well. As with this many developing countries would also see their average annual GDP growth increase.
 
 In regards of the employment in high and low income countries, it can  be seen that females are always leading the services sector and in the case of males, industry and agriculture take the highest number of workers. But overall, the highest income level, the lowest the amount of people working in industries such as industry or agriculture.
-
-
-*Section 3*
-
-
-
-
-
-
 
 \clearpage
 
