@@ -18,7 +18,11 @@ subtitle: "Team 6- The Outsiders"
 header-includes:
 - \usepackage{titling}
 - \usepackage{float}
+<<<<<<< HEAD
 - \pretitle{\begin{center}
+=======
+- \pretitle{\begin{center} 
+>>>>>>> a557e66f4a34320f26eb003c8a129ae629bd8125
  \includegraphics[width=5in,height=6in]{Figures/logo.jpg}\LARGE\\}
 - \posttitle{\end{center}}
 - \usepackage{fontawesome}
@@ -247,7 +251,7 @@ byyear <- readingdata %>% select(c(`Series Name`,`Country Name`, `2011 [YR2011]`
 
 The core analysis of this report is to analyze the different workforce distribution among high and low income countries and the gender distribution inside them. High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
 
-Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries. [@femaleworkforce]
+Having a closer look to the data, the distribution in the job market according to the gender and country it is taking part in, tends to variate according to the economy of each country. High income countries such as United States or France manages a similar trend in every industry according to the gender. But also, it can be seen that the rates are different compared to the low income countries.
 
 ## High Income Countries Workforce
 
@@ -735,7 +739,7 @@ With the help of our analysis, we can conclude that even though the gap between 
 
 In regards of the employment in high and low income countries, it can  be seen that females are always leading the services sector and in the case of males, industry and agriculture take the highest number of workers. But overall, the highest income level, the lowest the amount of people working in industries such as industry or agriculture.
 
-\clearpage
+
 
 
 
