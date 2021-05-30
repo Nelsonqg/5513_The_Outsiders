@@ -19,6 +19,7 @@ library(ggplot2)
 library(kableExtra)
 library(tibble)
 library(htmltools)
+library(plotly)
 
 ```
 
@@ -327,49 +328,17 @@ Row {.sidebar data-width=300}
 
 **Analysis by Gender**
 
-* High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
+High income countries such as United States and France and low income such as Colombia and Egypt were taken into account to evaluate the labor force condition and the general trends of the citizens performing jobs in agriculture, industry and services jobs.
 
-* The distribution in the job market according to the gender and country tends to variate according to the economy of each country. 
 
-* High income countries such as United States or France manages a similar trend in every industry according to the gender.
+The distribution in the job market according to the gender and country tends to variate according to the economy of each country. 
+
+
+High income countries such as United States or France manages a similar trend in every industry according to the gender.
 
 
 Column
 -----------------------------------------------------------------------
-
-### High Income Countries
-
-
-```{r highinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
-
-usafraemp <- byyear %>% 
-  filter(`Country Name` %in% c("United States",
-                               "France")) %>% 
-  ggplot(aes(x = `Year`,
-             y = `Percentage`, 
-             group = `Series Name`, 
-             color = `Series Name`))+
-  facet_wrap(~`Country Name`)+
-  geom_point(size = 2.5)+
-  geom_line(aes(linetype=`Series Name` %in%  c("Females in Agriculture (%)", 
-                                               "Females in Industry (%)", 
-                                               "Females in Services (%)")),
-            size= 1.5, 
-            show.legend = F)+
-  theme(legend.position = "bottom")+
-  labs( title = "Gender Workforce in High Income Countries")+
-  scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
-                     breaks = seq(0,100,10), 
-                     limits = c(0,100))
-  
-usafraemp
-
-```
-
-
-
-Column
------------------------------------------------------------------------ 
 
 ### Low Income Countries
 
@@ -390,15 +359,53 @@ colegyemp <- byyear %>%
                                                "Females in Services (%)")),
             size= 1.5, 
             show.legend = F)+
-  theme(legend.position = "bottom")+
+  theme(legend.position = 'none')+
   labs( title = "Gender Workforce in High Income Countries")+
   scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
                      breaks = seq(0,100,10), 
                      limits = c(0,100))
   
-colegyemp
+ggplotly(colegyemp)
 
 ```
+
+
+
+Column
+----------------------------------------------------------------------- 
+
+
+### High Income Countries
+
+
+```{r highinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
+
+usafraemp <- byyear %>% 
+  filter(`Country Name` %in% c("United States",
+                               "France")) %>% 
+  ggplot(aes(x = `Year`,
+             y = `Percentage`, 
+             group = `Series Name`, 
+             color = `Series Name`))+
+  facet_wrap(~`Country Name`)+
+  geom_point(size = 2.5)+
+  geom_line(aes(linetype=`Series Name` %in%  c("Females in Agriculture (%)", 
+                                               "Females in Industry (%)", 
+                                               "Females in Services (%)")),
+            size= 1.5, 
+            show.legend = F)+
+  theme(legend.position = 'none')+
+  labs( title = "Gender Workforce in High Income Countries")+
+  scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
+                     breaks = seq(0,100,10), 
+                     limits = c(0,100))
+  
+ggplotly(usafraemp)
+
+```
+
+
+
 
 
 
@@ -414,7 +421,7 @@ Row {.sidebar data-width=300}
 
 **Gender Workforce by Industry**
 
-*  Females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.
+Females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.
 
 
 
@@ -427,18 +434,18 @@ Column {column-width=40%}
 
 ```{r allvars, fig.width=20, fig.height=10, echo=FALSE, warning=FALSE, message=FALSE}
 
-byyear %>% ggplot(aes(x = `Year`,
+genderbyind <- byyear %>% ggplot(aes(x = `Year`,
                 y = `Percentage`, 
                 group = `Country Name`, 
                 color = `Country Name`))+
   facet_wrap(~fct_relevel(`Series Name`, c("Females in Agriculture (%)", 
-                                          "Females in Services (%)",
                                            "Females in Industry (%)",
+                                           "Females in Services (%)",
                                           "Males in Agriculture (%)",
-                                           "Males in Services (%)"
+                                           "Males in Industry (%)"
                                           )), 
              ncol = 3)+
-  theme(legend.position = "bottom")+
+  theme(legend.position = 'none')+
   scale_y_continuous(labels = function(x) paste0(x*1, "%"), 
                      breaks = seq(0,100,10), 
                      limits = c(0,100))+
@@ -447,9 +454,11 @@ byyear %>% ggplot(aes(x = `Year`,
                                                "Females in Services (%)")),
             size= 1.5, 
             show.legend = F,
-            alpha = 0.8)+
+            alpha = 1)+
   geom_point(size=2)
 
+
+ggplotly(genderbyind)
 
 ```
 
