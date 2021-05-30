@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.30)  30 MAY 2021 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.30)  30 MAY 2021 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1262,32 +1262,32 @@ File: biblatex.cfg
 (./The_Outsiders_5513.aux)
 \openout1 = `The_Outsiders_5513.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Info: Redefining \microtypecontext on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Info: Redefining \microtypecontext on input line 105.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 106.
+LaTeX Info: Redefining \showhyphens on input line 105.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1313,7 +1313,7 @@ ys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 106.
+Package hyperref Info: Link coloring OFF on input line 105.
 (/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1325,9 +1325,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count471
 )
-LaTeX Info: Redefining \ref on input line 106.
-LaTeX Info: Redefining \pageref on input line 106.
-LaTeX Info: Redefining \nameref on input line 106.
+LaTeX Info: Redefining \ref on input line 105.
+LaTeX Info: Redefining \pageref on input line 105.
+LaTeX Info: Redefining \nameref on input line 105.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1388,20 +1388,362 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'The_Outsiders_5513.bbl' found.
 (./The_Outsiders_5513.bbl)
-Runaway argument?
-{Labor force, female (\field {year}{2021} \endentry \entry {barrierse\ETC.
-! File ended while scanning use of \field.
-<inserted text> 
-                \par 
-l.106 \begin{document}
-                       
-Here is how much of TeX's memory you used:
- 38089 strings out of 480694
- 737384 string characters out of 5901282
- 1504156 words of memory out of 5000000
- 54979 multiletter control sequences out of 15000+600000
- 406692 words of font info for 31 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 91i,1n,102p,1035b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
+Package biblatex Info: Reference section=0 on input line 105.
+Package biblatex Info: Reference segment=0 on input line 105.
+<Figures/logo.jpg, id=43, 736.7525pt x 447.6725pt>
+File: Figures/logo.jpg Graphic file (type jpg)
+<use Figures/logo.jpg>
+Package pdftex.def Info: Figures/logo.jpg  used on input line 106.
+(pdftex.def)             Requested size: 361.34914pt x 219.56636pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+06.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+06.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+106.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+106.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 106.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 106.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 106
+.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 106
+.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) (./The_Outsiders_5513.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 7.
+)
+\tf@toc=\write5
+\openout5 = `The_Outsiders_5513.toc'.
 
-!  ==> Fatal error occurred, no output PDF file produced!
+[1
+
+{/Users/ratulwadhwa/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
+p} <./Figures/logo.jpg>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+36.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [2]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+59.
+(/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<The_Outsiders_5513_files/figure-latex/A1-1.pdf, id=97, 469.755pt x 325.215pt>
+File: The_Outsiders_5513_files/figure-latex/A1-1.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A1-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-1.pdf  used o
+n input line 165.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<The_Outsiders_5513_files/figure-latex/A1-2.pdf, id=98, 469.755pt x 325.215pt>
+File: The_Outsiders_5513_files/figure-latex/A1-2.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A1-2.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-2.pdf  used o
+n input line 176.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<The_Outsiders_5513_files/figure-latex/A1-3.pdf, id=99, 469.755pt x 325.215pt>
+File: The_Outsiders_5513_files/figure-latex/A1-3.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A1-3.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-3.pdf  used o
+n input line 187.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<The_Outsiders_5513_files/figure-latex/A1-4.pdf, id=100, 469.755pt x 325.215pt>
+
+File: The_Outsiders_5513_files/figure-latex/A1-4.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A1-4.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A1-4.pdf  used o
+n input line 196.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--202
+[][]
+ []
+
+[3
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.202 
+       <./The_Outsiders_5513_files/figure-latex/A1-1.pdf>] [4pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.2}) has been already use
+d, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.202 
+       <./The_Outsiders_5513_files/figure-latex/A1-2.pdf>] [5pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.3}) has been already use
+d, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.202 
+       <./The_Outsiders_5513_files/figure-latex/A1-3.pdf>]
+<The_Outsiders_5513_files/figure-latex/A3-1.pdf, id=138, 469.755pt x 325.215pt>
+
+File: The_Outsiders_5513_files/figure-latex/A3-1.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A3-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A3-1.pdf  used o
+n input line 244.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[6pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.246 F
+       igure@ref(fig:A3) shows the lines for female labour force and the male <
+./The_Outsiders_5513_files/figure-latex/A1-4.pdf>]
+<The_Outsiders_5513_files/figure-latex/A4-1.pdf, id=153, 469.755pt x 325.215pt>
+
+File: The_Outsiders_5513_files/figure-latex/A4-1.pdf Graphic file (type pdf)
+<use The_Outsiders_5513_files/figure-latex/A4-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/A4-1.pdf  used o
+n input line 254.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[7 <./The_Outsiders_5513_files/figure-latex/A3-1.pdf>] [8 <./The_Outsiders_5513
+_files/figure-latex/A4-1.pdf>]
+<The_Outsiders_5513_files/figure-latex/highinc-1.pdf, id=174, 867.24pt x 433.62
+pt>
+File: The_Outsiders_5513_files/figure-latex/highinc-1.pdf Graphic file (type pd
+f)
+<use The_Outsiders_5513_files/figure-latex/highinc-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/highinc-1.pdf  u
+sed on input line 302.
+(pdftex.def)             Requested size: 469.75827pt x 234.87912pt.
+[9
+
+ <./The_Outsiders_5513_files/figure-latex/highinc-1.pdf>]
+<The_Outsiders_5513_files/figure-latex/lowinc-1.pdf, id=190, 867.24pt x 433.62p
+t>
+File: The_Outsiders_5513_files/figure-latex/lowinc-1.pdf Graphic file (type pdf
+)
+<use The_Outsiders_5513_files/figure-latex/lowinc-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/lowinc-1.pdf  us
+ed on input line 321.
+(pdftex.def)             Requested size: 469.75827pt x 234.87912pt.
+<The_Outsiders_5513_files/figure-latex/allcountries-1.pdf, id=191, 1084.05pt x 
+325.215pt>
+File: The_Outsiders_5513_files/figure-latex/allcountries-1.pdf Graphic file (ty
+pe pdf)
+<use The_Outsiders_5513_files/figure-latex/allcountries-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/allcountries-1.p
+df  used on input line 342.
+(pdftex.def)             Requested size: 469.75496pt x 140.92648pt.
+[10 <./The_Outsiders_5513_files/figure-latex/lowinc-1.pdf> <./The_Outsiders_551
+3_files/figure-latex/allcountries-1.pdf>]
+<The_Outsiders_5513_files/figure-latex/agriculture-1.pdf, id=210, 722.7pt x 361
+.35pt>
+File: The_Outsiders_5513_files/figure-latex/agriculture-1.pdf Graphic file (typ
+e pdf)
+<use The_Outsiders_5513_files/figure-latex/agriculture-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/agriculture-1.pd
+f  used on input line 362.
+(pdftex.def)             Requested size: 469.76045pt x 234.88023pt.
+<The_Outsiders_5513_files/figure-latex/industry-1.pdf, id=211, 722.7pt x 361.35
+pt>
+File: The_Outsiders_5513_files/figure-latex/industry-1.pdf Graphic file (type p
+df)
+<use The_Outsiders_5513_files/figure-latex/industry-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/industry-1.pdf  
+used on input line 376.
+(pdftex.def)             Requested size: 469.76045pt x 234.88023pt.
+[11 <./The_Outsiders_5513_files/figure-latex/agriculture-1.pdf>]
+<The_Outsiders_5513_files/figure-latex/services-1.pdf, id=222, 722.7pt x 361.35
+pt>
+File: The_Outsiders_5513_files/figure-latex/services-1.pdf Graphic file (type p
+df)
+<use The_Outsiders_5513_files/figure-latex/services-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/services-1.pdf  
+used on input line 393.
+(pdftex.def)             Requested size: 469.76045pt x 234.88023pt.
+[12 <./The_Outsiders_5513_files/figure-latex/industry-1.pdf> <./The_Outsiders_5
+513_files/figure-latex/services-1.pdf>]
+<The_Outsiders_5513_files/figure-latex/allvars-1.pdf, id=239, 1084.05pt x 1084.
+05pt>
+File: The_Outsiders_5513_files/figure-latex/allvars-1.pdf Graphic file (type pd
+f)
+<use The_Outsiders_5513_files/figure-latex/allvars-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/allvars-1.pdf  u
+sed on input line 405.
+(pdftex.def)             Requested size: 469.75496pt x 469.75496pt.
+[13 <./The_Outsiders_5513_files/figure-latex/allvars-1.pdf>] [14
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.520 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.520 
+      ]
+<The_Outsiders_5513_files/figure-latex/Advancedeved-1.pdf, id=263, 469.755pt x 
+325.215pt>
+File: The_Outsiders_5513_files/figure-latex/Advancedeved-1.pdf Graphic file (ty
+pe pdf)
+<use The_Outsiders_5513_files/figure-latex/Advancedeved-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/Advancedeved-1.p
+df  used on input line 541.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<The_Outsiders_5513_files/figure-latex/Advancedeving-1.pdf, id=264, 469.755pt x
+ 325.215pt>
+File: The_Outsiders_5513_files/figure-latex/Advancedeving-1.pdf Graphic file (t
+ype pdf)
+<use The_Outsiders_5513_files/figure-latex/Advancedeving-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/Advancedeving-1.
+pdf  used on input line 551.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.566   M
+         oreover the difference between the ratio of males and females <./The_O
+utsiders_5513_files/figure-latex/Advancedeved-1.pdf>] [16pdfTeX warning (ext4):
+ destination with the same identifier (name{figure.5}) has been already used, d
+uplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.566   M
+         oreover the difference between the ratio of males and females <./The_O
+utsiders_5513_files/figure-latex/Advancedeving-1.pdf>] [17]
+<The_Outsiders_5513_files/figure-latex/Basicdeved-1.pdf, id=306, 469.755pt x 32
+5.215pt>
+File: The_Outsiders_5513_files/figure-latex/Basicdeved-1.pdf Graphic file (type
+ pdf)
+<use The_Outsiders_5513_files/figure-latex/Basicdeved-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/Basicdeved-1.pdf
+  used on input line 583.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<The_Outsiders_5513_files/figure-latex/Basicdeving-1.pdf, id=307, 469.755pt x 3
+25.215pt>
+File: The_Outsiders_5513_files/figure-latex/Basicdeving-1.pdf Graphic file (typ
+e pdf)
+<use The_Outsiders_5513_files/figure-latex/Basicdeving-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/Basicdeving-1.pd
+f  used on input line 593.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[18
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.613 \clearpage
+                 <./The_Outsiders_5513_files/figure-latex/Basicdeved-1.pdf>] [1
+9pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.613 \clearpage
+                 <./The_Outsiders_5513_files/figure-latex/Basicdeving-1.pdf>]
+<The_Outsiders_5513_files/figure-latex/Intermediatedeved-1.pdf, id=339, 469.755
+pt x 325.215pt>
+File: The_Outsiders_5513_files/figure-latex/Intermediatedeved-1.pdf Graphic fil
+e (type pdf)
+<use The_Outsiders_5513_files/figure-latex/Intermediatedeved-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/Intermediatedeve
+d-1.pdf  used on input line 619.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<The_Outsiders_5513_files/figure-latex/Intermediatedeving-1.pdf, id=340, 469.75
+5pt x 325.215pt>
+File: The_Outsiders_5513_files/figure-latex/Intermediatedeving-1.pdf Graphic fi
+le (type pdf)
+<use The_Outsiders_5513_files/figure-latex/Intermediatedeving-1.pdf>
+Package pdftex.def Info: The_Outsiders_5513_files/figure-latex/Intermediatedevi
+ng-1.pdf  used on input line 630.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[20
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.654 \clearpage
+                 <./The_Outsiders_5513_files/figure-latex/Intermediatedeved-1.p
+df>] [21pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.654 \clearpage
+                 <./The_Outsiders_5513_files/figure-latex/Intermediatedeving-1.
+pdf>] [22
+
+]
+Overfull \hbox (15.60114pt too wide) in paragraph at lines 675--675
+[][]\T1/lmr/m/n/10 (-20) Roser, Max (2013). ``Em-ploy-ment in Agri-cul-ture''. 
+In: \T1/lmr/m/it/10 (-20) Our World in Data\T1/lmr/m/n/10 (-20) . https://ourwo
+rldindata.org/employment-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--675
+\T1/lmr/m/n/10 (+20) https://www.weforum.org/agenda/2019/06/inflation-is-health
+y-for-the-economy-but-too-much-can-
+ []
+
+[23
+
+] (./The_Outsiders_5513.aux)
+Package logreq Info: Writing requests to 'The_Outsiders_5513.run.xml'.
+\openout1 = `The_Outsiders_5513.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 39011 strings out of 480694
+ 758792 string characters out of 5901282
+ 1525413 words of memory out of 5000000
+ 55585 multiletter control sequences out of 15000+600000
+ 462962 words of font info for 139 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 91i,12n,102p,1051b,1917s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{
+/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</U
+sers/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
+Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><
+/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
+/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
+/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><
+/Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
+</Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb
+></Users/ratulwadhwa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pf
+b>
+Output written on The_Outsiders_5513.pdf (23 pages, 499089 bytes).
+PDF statistics:
+ 484 PDF objects out of 1000 (max. 8388607)
+ 378 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 33161 words of extra memory for PDF output out of 35830 (max. 10000000)
+
