@@ -1,39 +1,43 @@
 ---
 title: "Analysis on Gender Statictics"
-author: "Hsu, Quintero, Wadhwa"
-output:
-  pdf_document:
-    citation_package: biblatex
-    highlight: tango
-    number_sections: yes
-    toc: yes
-    toc_depth: 2
-  html_document:
-    df_print: paged
-    toc: yes
-    toc_depth: '2'
+author:
+- familyname: Hsu
+  othernames: Hsin
+  address: Monash University
+  email: "hhsu0002@student.monash.edu"
+  correspondingauthor: true
+  qualifications: 32195109
+- familyname: Wadhwa
+  othernames: Ratul
+  address: Monash University
+  email: "rwad002@student.monash.edu"
+  qualifications: 32055587
+- familyname: Quintero
+  othernames: Nelson
+  address: Monash University
+  email: "nqui0008@student.monash.edu"
+  correspondingauthor: true
+  qualifications: 32254962
+department: Master of Business Analytics.
+organization: Monash University
 bibliography: references.bib 
 biblio-style: authoryear-comp
-subtitle: "Team 6- The Outsiders"
-header-includes:
-- \usepackage{titling}
-- \usepackage{float}
-<<<<<<< HEAD
-- \pretitle{\begin{center}
-=======
-- \pretitle{\begin{center} 
->>>>>>> a557e66f4a34320f26eb003c8a129ae629bd8125
- \includegraphics[width=5in,height=6in]{Figures/logo.jpg}\LARGE\\}
-- \posttitle{\end{center}}
-- \usepackage{fontawesome}
-- \usepackage[most]{tcolorbox}
-- \usepackage{xcolor}
-- \usepackage{sectsty}
-- \sectionfont{\color{blue}}
-- \usepackage{verbatim}
-- \usepackage{fancyhdr}
-- \pagestyle{fancy}
+linestretch: 1.5
+output:
+  bookdown::pdf_document2:
+    extra_dependencies: ["float"]
+    template: monashreport2.tex
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+    number_sections: yes
+    citation_package: biblatex
+    toc: true
 ---
+\clearpage
 
 # Introduction
 
@@ -53,7 +57,7 @@ Hence, the primary analysis of our report is to compare and contrast the gender 
 
 # Analysis 
 
-\section*{1}
+\section*{Section 1}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 # Libraries
@@ -141,7 +145,7 @@ p1 + p2
 Q1 <- map(countries, infla_labour)
 print(Q1)
 ```
-According to Figure\@ref(fig:A1), developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. [@stocker], and the global economy has not recovered from the GFC yet [@inflation1]. 
+According to the figures above, developed countries such as United States and France both have the lowest inflation rate in 2015. This is because in 2015, the crude oil price collapsed. [@stocker], and the global economy has not recovered from the GFC yet [@inflation1]. 
 
 Moreover, low inflation rate does not mean the currency is more valuable. On the contrary, it signals demand for goods and services is lower than expected and will then result in recession and the an increase in unemployment [@inflation2].
 
@@ -160,7 +164,7 @@ t1 <- analysis %>%
 t1
 ```
 
-Table \@ref(tab:A2) shows the 2015 inflation rate. 
+Table \ref{tab:A2} shows the 2015 inflation rate. 
 
 ## Gender distribution for labour force
 
@@ -168,7 +172,7 @@ Moreover, the labour force in each country is increasing but decreasing in Franc
 
 Let's also look at the gender distribution in the labour force.
 
-```{r A3, echo=FALSE, warning=FALSE, message=FALSE}
+```{r A3, fig.cap = "Gender distribution for labour force" , echo=FALSE, warning=FALSE, message=FALSE}
 analysis %>%
   ggplot(aes(x = Year))+
   geom_line(aes(y = Population_ages_15_64_female), color = "red")+
@@ -181,11 +185,11 @@ analysis %>%
   facet_wrap(~`Country Name`)
 ```
 
-Figure\@ref(fig:A3) shows the lines for female labour force and the male labour force are almost overlapped with each other, meaning the gender distribution for labour force is fairly equal in these countries.
+Figure \ref{fig:A3} shows the lines for female labour force and the male labour force are almost overlapped with each other, meaning the gender distribution for labour force is fairly equal in these countries.
 
 ## Life expectancy for female and male at birth
 
-```{r A4, echo=FALSE, warning=FALSE, message=FALSE, fig.pos="Center"}
+```{r A4, fig.cap = "Life expectancy for female and male at birth", echo=FALSE, warning=FALSE, message=FALSE, fig.pos="Center"}
 analysis %>%
   ggplot(aes(x = Year))+
   geom_line(aes(y = Life_expectancy_at_birth_female), color = "red")+
@@ -195,12 +199,11 @@ analysis %>%
   facet_wrap(~`Country Name`)
 ```
 
-Figure\@ref(fig:A4) shows the life expectancy for female is obviously higher than male. More interestingly, US and France are having a stable life expectancy from 2011 til 2019, while in Egypt and Colombia, the life expectancy for both genders is increasing.
+Figure \ref{fig:A4} shows the life expectancy for female is obviously higher than male. More interestingly, US and France are having a stable life expectancy from 2011 til 2019, while in Egypt and Colombia, the life expectancy for both genders is increasing.
 
 \clearpage
 
-\section*{2}
-
+\section*{Section 2}
 
 
 ```{r readingdata, message=FALSE, echo=FALSE, warning=FALSE}
@@ -208,7 +211,6 @@ Figure\@ref(fig:A4) shows the life expectancy for female is obviously higher tha
 readingdata <- read_csv("data/088121e0-ea83-4b15-be2a-1bcc36ea893f_Data.csv")
 
 ```
-
 
 ```{r cleaningdata, fig.width=10,fig.height=9, fig.width=12, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -257,12 +259,12 @@ Having a closer look to the data, the distribution in the job market according t
 
 The higher income countries have, the higher participation in services by males. On the other hand, there is lower concentration in the participation of female in industries that are considered "Masculine" for the time being, agriculture and industry. 
 
-For high income countries the similarity in the allocation of workforce among the studies industries is surprisingly similar. in the figure \@ref(fig:highinc) USA and France have an average of 67% of male workforce, also, have a similar percentage by 2019 in industry of 30% and in agriculture of 4%.
+For high income countries the similarity in the allocation of workforce among the studies industries is surprisingly similar. in the figure \ref{fig:highinc} USA and France have an average of 67% of male workforce, also, have a similar percentage by 2019 in industry of 30% and in agriculture of 4%.
 
 Generally, females are on top of the chart with about 90% working in services, and with similar rates for agriculture and industry of 1% and 9% respectively. 
 
 
-```{r highinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
+```{r highinc, fig.cap = "High Income Countries Workforce", fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
 
 usafraemp <- byyear %>% 
   filter(`Country Name` %in% c("United States",
@@ -294,9 +296,9 @@ usafraemp
 
 Males in the job market for low income countries keep similar trends for the jobs in agriculture. In 2019, in Colombia and Egypt got in average 25% of male participation. In industry, Colombia and Egypt have a notorious difference of 25% and 32% respectively. 
 
-In the case of females, they keep an average from 10% to 20% in "Masculine" jobs, as per in services, they keep from 50% to 80%. Egypt had a huge decline in the agricultural jobs for females from a 43% to 21%. It is remarkable this variation along the previous 9 years as well as that the  woman workforce seemed to move in the same rate to the services industry as seen in the figure \@ref(fig:lowinc) below. [@WDAgriculture]
+In the case of females, they keep an average from 10% to 20% in "Masculine" jobs, as per in services, they keep from 50% to 80%. Egypt had a huge decline in the agricultural jobs for females from a 43% to 21%. It is remarkable this variation along the previous 9 years as well as that the  woman workforce seemed to move in the same rate to the services industry as seen in the figure \ref{fig:lowinc} below. [@WDAgriculture]
 
-```{r lowinc, fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
+```{r lowinc, fig.cap = "Low Income Countries Workforce", fig.width=12,fig.height=6, echo=FALSE, warning=FALSE, message=FALSE}
 
 colegyemp <- byyear %>% 
   filter(`Country Name` %in% c("Colombia",
@@ -328,9 +330,9 @@ colegyemp
 
 As seen in the current analysis the economical capacity of the countries can infer in the workforce distribution. In a general view of the selected samples, females have in all of them the highest rate of employment in services as well as the lowest in agriculture, this does not apply in Egypt but the current trend is showing that there is a moving out of that industry.
 
-Similarly, males have the highest level of employment in services, but they keep leading the industry and agricultural workforce. It is noticeable that if a country is wealthy, there is a higher level of participation of females in service jobs compared to low income countries. On the other hand, despite the income level of the country males keep the same percentage among the countries. See figure \@ref(fig:allcountries).
+Similarly, males have the highest level of employment in services, but they keep leading the industry and agricultural workforce. It is noticeable that if a country is wealthy, there is a higher level of participation of females in service jobs compared to low income countries. On the other hand, despite the income level of the country males keep the same percentage among the countries. See figure \ref{fig:allcountries}.
 
-```{r allcountries, fig.width=15, echo=FALSE, warning=FALSE, message=FALSE}
+```{r allcountries, fig.cap = "Gender Workforce Distribution by Country", fig.width=15, echo=FALSE, warning=FALSE, message=FALSE}
 
 byyear %>% ggplot(aes(x = `Year`,
                 y = `Percentage`, 
@@ -357,10 +359,10 @@ From other point of view and analyzing the variables across all the countries it
 
 ## Female and Male Employment in Agriculture.
 
-in the figure \@ref(fig:agriculture) women keep the lowest participation in agriculture and industry jobs in the selected countries except Egypt which have had a decrease around of 50% during the past 9 years, keeping lowest rates compared to male results. The level of jobs have been steady for males and females during the analyzed years. 
+in the figure \ref{fig:agriculture} women keep the lowest participation in agriculture and industry jobs in the selected countries except Egypt which have had a decrease around of 50% during the past 9 years, keeping lowest rates compared to male results. The level of jobs have been steady for males and females during the analyzed years. 
 
 
-```{r agriculture, fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
+```{r agriculture, fig.cap = "Female and Male Employment in Agriculture", fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
 byyear %>% 
   filter(`Series Name` %in% c("Males in Agriculture (%)",
                               "Females in Agriculture (%)"), 
@@ -392,9 +394,9 @@ byyear %>%
 
 In the case of industry jobs, male keep a highest rate compared to female across the analyzed countries. In 2019 the number of female rose by 5% in Egypt, while in Colombia decreased by 2% and in USA and France maintained the same levels.
 
-In the case of males, all the countries maintained about the same levels since 2011 as seen in the figure \@ref(fig:industry).
+In the case of males, all the countries maintained about the same levels since 2011 as seen in the figure \ref{fig:industry}.
 
-```{r industry, fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
+```{r industry, fig.cap = "Female and Male Employment in Industry", fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
 byyear %>% 
   filter(`Series Name` %in% c("Males in Industry (%)",
                               "Females in Industry (%)"), 
@@ -426,10 +428,10 @@ byyear %>%
 
 Female have a highest participation in the services sector compared to males and across all the industries.
 
-In general, all the countries kept the same average levels since 2011 and they are in a similar range despite the income level of the country. But, Egypt has an interesting variation of the the jobs allocation. In this case, females in services have rose over 30% in the last years, maintaining the leading over their male peers. In this Industry Egypt has the lowest of people, but the trend keeps a future positive path as well as France. See figure \@ref(fig:services).
+In general, all the countries kept the same average levels since 2011 and they are in a similar range despite the income level of the country. But, Egypt has an interesting variation of the the jobs allocation. In this case, females in services have rose over 30% in the last years, maintaining the leading over their male peers. In this Industry Egypt has the lowest of people, but the trend keeps a future positive path as well as France. See figure \ref{fig:services}.
 
 
-```{r services, fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
+```{r services, fig.cap = "Female and Male Employment in Services", fig.width=10, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE}
 byyear %>% 
   filter(`Series Name` %in% c("Males in Services (%)",
                               "Females in Services (%)"), 
@@ -463,7 +465,7 @@ byyear %>%
 In summary, females across all countries have lower levels than male occupations in agriculture and industry. On the other hand females have the lead in the services job market, the most notorious case of growth in this industry was Egypt that in 2019 the percentage of females in this industry was 71%.
 
 
-```{r allvars, fig.width=15, fig.height=15, echo=FALSE, warning=FALSE, message=FALSE}
+```{r allvars, fig.cap = "Gender Workforce by Industry", fig.width=15, fig.height=15, echo=FALSE, warning=FALSE, message=FALSE}
 
 byyear %>% ggplot(aes(x = `Year`,
                 y = `Percentage`, 
@@ -493,7 +495,7 @@ byyear %>% ggplot(aes(x = `Year`,
 
 \clearpage
 
-\section*{3}
+\section*{Section 3}
 
 ```{r echo= FALSE, warning=FALSE, message=FALSE}
 
@@ -568,11 +570,11 @@ developing <- Gender_statistics%>%
   
 ```
 
-From table \@ref(tab:tabref) and table \@ref(tab:tabref1) we can summarize that clearly the percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt. 
+From table \ref{tab:tabref} and table \ref{tab:tabref1} we can summarize that clearly the percentage of female unemployment is way *more in developing countries* than that of the *developed countries* like US and France. For instance, in **2015** the reported percentage of females unemployed in United States was just 5% where as it was 24 percentage in developing countries like Egypt. 
 
 The gap in participation rates between men and women is narrowing in developed countries but continues to widen in developing countries, as we can observe that the percentage is almost equal for both males and females in US and France where as in Columbia and Egypt,the employment rate is more for men than women.[@social]
 
-Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab:tabref1) was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@education].
+Another interesting observation from table \ref{tab:tabref} and table \ref{tab:tabref1} was seen that the overall unemployment tread in the developing countries is more than that of developed countries. The basic cause of this can be the deficiency of the availability of essential consumer goods, often called wage goods [@education].
 
 ##  Analysis on unemployed males and females on the bases of qualifications
 
@@ -581,6 +583,7 @@ Another interesting observation from table \@ref(tab:tabref) and table \@ref(tab
 ```{r include= FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 
 library(webshot)
+webshot::install_phantomjs()
 ```
 
 ```{r Advancedeved, fig.cap = "Unemployment with advanced education in developed countries", echo=FALSE, warning=FALSE, message=FALSE, fig.pos='hold'}
@@ -601,7 +604,7 @@ fig <- ggplotly(p)
 fig
 ```
 
-Figure \@ref(fig:Advancedeved) shows the unemployment percentage of males and females with advanced education in developed countries like United states and France.
+Figure \ref{fig:Advancedeved} shows the unemployment percentage of males and females with advanced education in developed countries like United states and France.
 
 ```{r Advancedeving, fig.cap = "Unemployment with advanced education in developing countries", echo=FALSE, warning=FALSE, message=FALSE, fig.pos='hold'}
 
@@ -623,11 +626,11 @@ fig <- ggplotly(q)
 fig
 ```
 
-Figure \@ref(fig:Advancedeving) shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
+Figure \ref{fig:Advancedeving} shows the unemployment percentage of males and females with advanced education in developing countries like Colombia and Egypt.
 
-* Unemployment rates fall with higher educational attainment. As shown in figures \@ref(fig:Advancedeved) and \@ref(fig:Advancedeving) we can see that the overall percentage of unemployment is between 2% to 6% in developed countries and close to 10%  in developing countries. 
++ Unemployment rates fall with higher educational attainment. As shown in figures \ref{fig:Advancedeved} and \ref{fig:Advancedeving} we can see that the overall percentage of unemployment is between 2% to 6% in developed countries and close to 10%  in developing countries. 
 
-* Moreover the difference between the ratio of males and females unemployed is also low with advanced education for all countries except Egypt, where the difference is close to 15%.  Possible reasons for that include the high cost of childcare, the expectation that women carry out the majority of household responsibilities, negative attitudes toward women in the workplace, lack of mobility, legal barriers, persistent wage gaps, sexual harassment in the workplace, and poor enforcement of anti-discrimination laws [@barriersegypt]
++ Moreover the difference between the ratio of males and females unemployed is also low with advanced education for all countries except Egypt, where the difference is close to 15%.  Possible reasons for that include the high cost of childcare, the expectation that women carry out the majority of household responsibilities, negative attitudes toward women in the workplace, lack of mobility, legal barriers, persistent wage gaps, sexual harassment in the workplace, and poor enforcement of anti-discrimination laws [@barriersegypt]
 
 \clearpage
 
@@ -653,7 +656,7 @@ fig
 
 ```
 
-Figure \@ref(fig:Basicdeved) shows the unemployment percentage of males and females with basic education in developed countries like United states and France.
+Figure \ref{fig:Basicdeved} shows the unemployment percentage of males and females with basic education in developed countries like United states and France.
 
 ```{r Basicdeving, fig.cap = "Unemployment with basic education in developing countries", echo=FALSE, warning=FALSE, message=FALSE, fig.pos='hold'}
 
@@ -676,17 +679,17 @@ fig
 
 ```
 
-Figure \@ref(fig:Basicdeving) shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
+Figure \ref{fig:Basicdeving} shows the unemployment percentage of males and females with basic education in developing countries like Colombia and Egypt.
 
-* It is interesting to see that the percentage of unemployment of males is more than that of females for all the years in France \@ref(fig:Basicdeved). 
++ It is interesting to see that the percentage of unemployment of males is more than that of females for all the years in France \ref{fig:Basicdeved}. 
 
-* Figure \@ref(fig:Basicdeving) Egypt shows that with just basic education the percentage of unemployment can decrease. The gap between males and females unemployment has gone down from 9% to almost 3% over the years. 
++ Figure \ref{fig:Basicdeving} Egypt shows that with just basic education the percentage of unemployment can decrease. The gap between males and females unemployment has gone down from 9% to almost 3% over the years. 
 
 \clearpage
 
 **Intermediate Education**
 
-```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE, fig.pos='hold'}
+```{r Intermediatedeved, fig.cap = "Unemployment with intermediate education in developed countries", echo=FALSE, warning=FALSE, message=FALSE}
 
 intermediate_education_developed <- Gender_statistics%>%
   filter(`Country Name` %in% c("United States", "France"))%>%
@@ -704,7 +707,7 @@ fig <- ggplotly(t)
 fig
 ```
 
-Figure \@ref(fig:Intermediatedeved) shows the unemployment percentage of males and females with intermediate education in developed countries like United states and France.
+Figure \ref{fig:Intermediatedeved} shows the unemployment percentage of males and females with intermediate education in developed countries like United states and France.
 
 ```{r Intermediatedeving, fig.cap = "Unemployment with intermediate education in developing countries", echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -724,11 +727,11 @@ fig <- ggplotly(u)
 fig
 ```
 
-Figure \@ref(fig:Intermediatedeving) shows the unemployment percentage of males and females with intermediate education in developing countries like Colombia and Egypt.
+Figure \ref{fig:Intermediatedeving} shows the unemployment percentage of males and females with intermediate education in developing countries like Colombia and Egypt.
 
-* Those with low educational attainment **intermediate education** are both less likely to be labor force participants and more likely to be unemployed. The greatest gender differences in unemployment rates are seen among adults with lower levels of education as shown in figure \@ref(fig:Intermediatedeving). The percentage of female unemployment is close to 30% in females whereas its 11% for males
++ Those with low educational attainment **intermediate education** are both less likely to be labor force participants and more likely to be unemployed. The greatest gender differences in unemployment rates are seen among adults with lower levels of education as shown in figure \ref{fig:Intermediatedeving}. The percentage of female unemployment is close to 30% in females whereas its 11% for males
 
-* Whereas in developed countries even though the percentage of unemployment is high with intermediate education, its satisfying to see that it is almost equal for both males and females \@ref(fig:Intermediatedeved). [@education]
++ Whereas in developed countries even though the percentage of unemployment is high with intermediate education, its satisfying to see that it is almost equal for both males and females \ref{fig:Intermediatedeved}. [@education]
 
 
 \clearpage
