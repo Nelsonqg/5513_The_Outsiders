@@ -33,19 +33,8 @@ The_Outsiders_5513.Rproj -> The_Outsiders_5513.Rmd -> Knit
 
 Template used
 -----------------------------
-- \usepackage{titling}
-- \usepackage{float}
-- \pretitle{\begin{center} 
-  \includegraphics[width=5in,height=6in]{Figures/logo.jpg}\LARGE\\}
-- \posttitle{\end{center}}
-- \usepackage{fontawesome}
-- \usepackage[most]{tcolorbox}
-- \usepackage{xcolor}
-- \usepackage{sectsty}
-- \sectionfont{\color{blue}}
-- \usepackage{verbatim}
-- \usepackage{fancyhdr}
-- \pagestyle{fancy}
+template: monashreport2.tex
+in_header: preamble.tex
 
 Figures -> logo.jpg contains the logo for the report
 
